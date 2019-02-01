@@ -1,0 +1,25 @@
+C:\Users\dcarvalh\AppData\Local\Temporary Projects\SSCDeploy\bin\Debug\SSCDeploy.exe.config
+C:\Users\dcarvalh\AppData\Local\Temporary Projects\SSCDeploy\bin\Debug\SSCDeploy.exe
+C:\Users\dcarvalh\AppData\Local\Temporary Projects\SSCDeploy\bin\Debug\SSCDeploy.pdb
+C:\Users\dcarvalh\AppData\Local\Temporary Projects\SSCDeploy\obj\Debug\SSCDeploy.csprojAssemblyReference.cache
+C:\Users\dcarvalh\AppData\Local\Temporary Projects\SSCDeploy\obj\Debug\SSCDeploy.mainForm.resources
+C:\Users\dcarvalh\AppData\Local\Temporary Projects\SSCDeploy\obj\Debug\SSCDeploy.Properties.Resources.resources
+C:\Users\dcarvalh\AppData\Local\Temporary Projects\SSCDeploy\obj\Debug\SSCDeploy.csproj.GenerateResource.cache
+C:\Users\dcarvalh\AppData\Local\Temporary Projects\SSCDeploy\obj\Debug\SSCDeploy.csproj.CoreCompileInputs.cache
+C:\Users\dcarvalh\AppData\Local\Temporary Projects\SSCDeploy\obj\Debug\SSCDeploy.exe
+C:\Users\dcarvalh\AppData\Local\Temporary Projects\SSCDeploy\obj\Debug\SSCDeploy.pdb
+C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\bin\Debug\SSCDeploy.exe.config
+C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\bin\Debug\SSCDeploy.exe
+C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\bin\Debug\SSCDeploy.pdb
+C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.csprojAssemblyReference.cache
+C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.mainForm.resources
+C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.Properties.Resources.resources
+C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.csproj.GenerateResource.cache
+C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.csproj.CoreCompileInputs.cache
+C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.exe
+C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.pdb
+C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\bin\Debug\System.Management.Automation.dll
+C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\bin\Debug\Microsoft.Management.Infrastructure.dll
+C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\bin\Debug\Microsoft.Management.Infrastructure.Native.dll
+C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\bin\Debug\System.Management.Automation.xml
+C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.csproj.CopyComplete
