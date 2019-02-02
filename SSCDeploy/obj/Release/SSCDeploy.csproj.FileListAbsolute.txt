@@ -1,0 +1,15 @@
+C:\Users\Dizecrypt\Documents\10-Coding\SSCDeploy\SSCDeploy\bin\Release\syspin.exe
+C:\Users\Dizecrypt\Documents\10-Coding\SSCDeploy\SSCDeploy\bin\Release\SSCDeploy.exe.config
+C:\Users\Dizecrypt\Documents\10-Coding\SSCDeploy\SSCDeploy\bin\Release\SSCDeploy.exe
+C:\Users\Dizecrypt\Documents\10-Coding\SSCDeploy\SSCDeploy\bin\Release\SSCDeploy.pdb
+C:\Users\Dizecrypt\Documents\10-Coding\SSCDeploy\SSCDeploy\bin\Release\System.Management.Automation.dll
+C:\Users\Dizecrypt\Documents\10-Coding\SSCDeploy\SSCDeploy\bin\Release\Microsoft.Management.Infrastructure.dll
+C:\Users\Dizecrypt\Documents\10-Coding\SSCDeploy\SSCDeploy\bin\Release\Microsoft.Management.Infrastructure.Native.dll
+C:\Users\Dizecrypt\Documents\10-Coding\SSCDeploy\SSCDeploy\bin\Release\System.Management.Automation.xml
+C:\Users\Dizecrypt\Documents\10-Coding\SSCDeploy\SSCDeploy\obj\Release\SSCDeploy.mainForm.resources
+C:\Users\Dizecrypt\Documents\10-Coding\SSCDeploy\SSCDeploy\obj\Release\SSCDeploy.Properties.Resources.resources
+C:\Users\Dizecrypt\Documents\10-Coding\SSCDeploy\SSCDeploy\obj\Release\SSCDeploy.csproj.GenerateResource.cache
+C:\Users\Dizecrypt\Documents\10-Coding\SSCDeploy\SSCDeploy\obj\Release\SSCDeploy.csproj.CoreCompileInputs.cache
+C:\Users\Dizecrypt\Documents\10-Coding\SSCDeploy\SSCDeploy\obj\Release\SSCDeploy.csproj.CopyComplete
+C:\Users\Dizecrypt\Documents\10-Coding\SSCDeploy\SSCDeploy\obj\Release\SSCDeploy.exe
+C:\Users\Dizecrypt\Documents\10-Coding\SSCDeploy\SSCDeploy\obj\Release\SSCDeploy.pdb

@@ -1,5 +1,6 @@
 ﻿using SSCDeploy.Actions;
 using System;
+using System.Diagnostics;
 using System.Windows.Forms;
 
 namespace SSCDeploy
@@ -17,16 +18,8 @@ namespace SSCDeploy
             //Sleep.Disable();
             //IPV6.Disable();
             //Docking.Unpin();
-            bool success = true;
-            try
-            {
-                PTTB10.ChangeImagePathName("explorer.exe");
-                success = PTTB10.PinUnpinTaskbar(@"C:\Program Files (x86)\Microsoft Office\Office16\OUTLOOK.EXE", true);
-            }
-            finally
-            {
-                PTTB10.RestoreImagePathName();
-            }
+            //Docking.Pin();
+            
         }
     }
 }
