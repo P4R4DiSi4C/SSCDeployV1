@@ -9,21 +9,28 @@ namespace SSCDeploy.Actions
 
         public static void Disable()
         {
-            using (PowerShell powershell_Inst = PowerShell.Create())
+            try
             {
+                using (PowerShell powershell_Inst = PowerShell.Create())
+                {
 
-                powershell_Inst.AddScript("Get-NetAdapterBinding -ComponentID 'ms_tcpip6' | disable-NetAdapterBinding -ComponentID ms_tcpip6 -PassThru");
-                Collection<PSObject> PSOutput = powershell_Inst.Invoke();
+                    powershell_Inst.AddScript("Get-NetAdapterBinding -ComponentID 'ms_tcpip6' | disable-NetAdapterBinding -ComponentID ms_tcpip6 -PassThru");
+                    Collection<PSObject> PSOutput = powershell_Inst.Invoke();
+                }
+            }
+            catch (System.Exception ex)
+            {
+                throw new System.ApplicationException("La désactivation de l'IPV6 s'est mal déroulée:", ex);
             }
         }
 
         public static void Enable()
         {
-            using (PowerShell powershell_Inst = PowerShell.Create())
+            using (PowerShell ps = PowerShell.Create())
             {
 
-                powershell_Inst.AddScript("Get-NetAdapterBinding -ComponentID 'ms_tcpip6' | enable-NetAdapterBinding -ComponentID ms_tcpip6 -PassThru");
-                Collection<PSObject> PSOutput = powershell_Inst.Invoke();
+                ps.AddScript("Get-NetAdapterBinding -ComponentID 'ms_tcpip6' | enable-NetAdapterBinding -ComponentID ms_tcpip6 -PassThru");
+                Collection<PSObject> PSOutput = ps.Invoke();
             }
         }
     }

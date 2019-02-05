@@ -18,9 +18,6 @@ C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.
 C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.csproj.CoreCompileInputs.cache
 C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.exe
 C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.pdb
-C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\bin\Debug\System.Management.Automation.dll
-C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\bin\Debug\Microsoft.Management.Infrastructure.dll
-C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\bin\Debug\Microsoft.Management.Infrastructure.Native.dll
 C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\bin\Debug\System.Management.Automation.xml
 C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.csproj.CopyComplete
 C:\Users\Dizecrypt\Documents\10-Coding\SSCDeploy\SSCDeploy\bin\Debug\SSCDeploy.exe.config
@@ -39,3 +36,7 @@ C:\Users\Dizecrypt\Documents\10-Coding\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.c
 C:\Users\Dizecrypt\Documents\10-Coding\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.exe
 C:\Users\Dizecrypt\Documents\10-Coding\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.pdb
 C:\Users\Dizecrypt\Documents\10-Coding\SSCDeploy\SSCDeploy\bin\Debug\syspin.exe
+C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\bin\Debug\Files\dummy.pdf
+C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\bin\Debug\Files\syspin.exe
+C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\bin\Debug\Files\FirefoxProfile.zip
+C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\bin\Debug\Files\NICPowerSave.ps1

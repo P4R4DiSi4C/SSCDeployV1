@@ -13,11 +13,18 @@
 
         public static void Disable()
         {
-            //DC = Battery
-            //PowerCFG.Power_CFG(DC_DISABLE);
+            try
+            {
+                //DC = Battery
+                //PowerCFG.Power_CFG(DC_DISABLE);
 
-            //AC = Plugged
-            PowerCFG.Power_CFG(AC_DISABLE);
+                //AC = Plugged
+                PowerCFG.Power_CFG(AC_DISABLE);
+            }
+            catch (System.Exception ex)
+            {
+                throw new System.ApplicationException("La désactivation de la mise en veille sous secteur s'est mal déroulée:", ex);
+            }
         }
 
         public static void Enable()

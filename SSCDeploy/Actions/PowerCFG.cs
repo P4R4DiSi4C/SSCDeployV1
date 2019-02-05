@@ -8,7 +8,18 @@ namespace SSCDeploy.Actions
 
         public static void Power_CFG(string args)
         {
-            Process.Start(POWER_CFG, args);
+            Process p = new Process();
+            ProcessStartInfo cmd = new ProcessStartInfo();
+            cmd.FileName = "cmd.exe";
+            cmd.RedirectStandardInput = true;
+            cmd.UseShellExecute = false;
+            cmd.CreateNoWindow = true;
+            cmd.Arguments = "/C " + POWER_CFG + args;
+
+            p.StartInfo = cmd;
+            p.Start();
+            p.WaitForExit();
+            p.Close();
         }
     }
 }
