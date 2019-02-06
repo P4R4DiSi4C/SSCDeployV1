@@ -1,6 +1,6 @@
 ﻿using System.Collections.ObjectModel;
 using System.Management.Automation;
-
+using System.Windows.Forms;
 
 namespace SSCDeploy.Actions
 {
@@ -24,7 +24,7 @@ namespace SSCDeploy.Actions
             }
             catch (System.Exception ex)
             {
-                throw new System.ApplicationException("La désactivation de la mise en veille des cartes réseau s'est mal déroulée:", ex);
+                MessageBox.Show("La désactivation de la mise en veille des cartes réseau s'est mal déroulée: " + ex.ToString());
             }
         }
     }

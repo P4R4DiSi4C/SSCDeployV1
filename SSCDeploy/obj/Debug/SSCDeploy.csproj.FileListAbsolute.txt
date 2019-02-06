@@ -8,18 +8,6 @@ C:\Users\dcarvalh\AppData\Local\Temporary Projects\SSCDeploy\obj\Debug\SSCDeploy
 C:\Users\dcarvalh\AppData\Local\Temporary Projects\SSCDeploy\obj\Debug\SSCDeploy.csproj.CoreCompileInputs.cache
 C:\Users\dcarvalh\AppData\Local\Temporary Projects\SSCDeploy\obj\Debug\SSCDeploy.exe
 C:\Users\dcarvalh\AppData\Local\Temporary Projects\SSCDeploy\obj\Debug\SSCDeploy.pdb
-C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\bin\Debug\SSCDeploy.exe.config
-C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\bin\Debug\SSCDeploy.exe
-C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\bin\Debug\SSCDeploy.pdb
-C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.csprojAssemblyReference.cache
-C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.mainForm.resources
-C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.Properties.Resources.resources
-C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.csproj.GenerateResource.cache
-C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.csproj.CoreCompileInputs.cache
-C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.exe
-C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.pdb
-C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\bin\Debug\System.Management.Automation.xml
-C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.csproj.CopyComplete
 C:\Users\Dizecrypt\Documents\10-Coding\SSCDeploy\SSCDeploy\bin\Debug\SSCDeploy.exe.config
 C:\Users\Dizecrypt\Documents\10-Coding\SSCDeploy\SSCDeploy\bin\Debug\SSCDeploy.exe
 C:\Users\Dizecrypt\Documents\10-Coding\SSCDeploy\SSCDeploy\bin\Debug\SSCDeploy.pdb
@@ -37,6 +25,18 @@ C:\Users\Dizecrypt\Documents\10-Coding\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.e
 C:\Users\Dizecrypt\Documents\10-Coding\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.pdb
 C:\Users\Dizecrypt\Documents\10-Coding\SSCDeploy\SSCDeploy\bin\Debug\syspin.exe
 C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\bin\Debug\Files\dummy.pdf
-C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\bin\Debug\Files\syspin.exe
-C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\bin\Debug\Files\FirefoxProfile.zip
 C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\bin\Debug\Files\NICPowerSave.ps1
+C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\bin\Debug\Files\USBPowerSave.ps1
+C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\bin\Debug\Files\FirefoxProfile.zip
+C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\bin\Debug\Files\syspin.exe
+C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\bin\Debug\SSCDeploy.exe.config
+C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\bin\Debug\SSCDeploy.exe
+C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\bin\Debug\SSCDeploy.pdb
+C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\bin\Debug\System.Management.Automation.xml
+C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.mainForm.resources
+C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.Properties.Resources.resources
+C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.csproj.GenerateResource.cache
+C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.csproj.CoreCompileInputs.cache
+C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.csproj.CopyComplete
+C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.exe
+C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.pdb

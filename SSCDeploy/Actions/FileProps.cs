@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Runtime.InteropServices;
+using System.Windows.Forms;
 
 namespace SSCDeploy.Actions
 {
@@ -51,7 +52,7 @@ namespace SSCDeploy.Actions
             }
             catch (Exception ex)
             {
-                throw new ApplicationException("L'ouverture de la fenêtre 'Proprietés' du fichier .PDF s'est mal déroulée:", ex);
+                MessageBox.Show("L'ouverture de la fenêtre 'Proprietés' du fichier .PDF s'est mal déroulée: " + ex.ToString());
             }
         }
     }

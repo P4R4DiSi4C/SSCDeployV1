@@ -1,4 +1,6 @@
-﻿namespace SSCDeploy.Actions
+﻿using System.Windows.Forms;
+
+namespace SSCDeploy.Actions
 {
     public static class Sleep
     {
@@ -23,7 +25,7 @@
             }
             catch (System.Exception ex)
             {
-                throw new System.ApplicationException("La désactivation de la mise en veille sous secteur s'est mal déroulée:", ex);
+                MessageBox.Show("La désactivation de la mise en veille sous secteur s'est mal déroulée: " + ex.ToString());
             }
         }
 

@@ -1,12 +1,13 @@
 ﻿using System;
 using System.IO.Compression;
 using System.IO;
+using System.Windows.Forms;
 
 namespace SSCDeploy.Actions
 {
     public class Firefox
     {
-        private static string[] mozillaPaths = { Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), @"Mozilla", "Firefox"};
+        private static string[] mozillaPaths = { Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Mozilla", "Firefox"};
         private static DirectoryInfo mozillaDir = new DirectoryInfo(Path.Combine(mozillaPaths));
 
         private static void DeleteProfiles()
@@ -39,7 +40,7 @@ namespace SSCDeploy.Actions
                     }
                     catch (Exception ex)
                     {
-                        throw new ApplicationException("Erreur lors de la création du dossier Mozilla:", ex);
+                        MessageBox.Show("Erreur lors de la création du dossier Mozilla: " + ex.ToString());
                     }
                 }
                 else
@@ -50,7 +51,7 @@ namespace SSCDeploy.Actions
                     }
                     catch (Exception ex)
                     {
-                        throw new ApplicationException("La suppression du profil Firefox existant s'est mal déroulée:", ex);
+                        MessageBox.Show("La suppression du profil Firefox existant s'est mal déroulée: " + ex.ToString());
                     }
                 }
 
@@ -60,12 +61,12 @@ namespace SSCDeploy.Actions
                 }
                 catch (Exception ex)
                 {
-                    throw new ApplicationException("L'extraction du profile Firefox s'est mal déroulée:", ex);
+                    MessageBox.Show("L'extraction du profil Firefox s'est mal déroulée: " + ex.ToString());
                 }
             }
             catch (Exception ex)
             {
-                throw new ApplicationException("Erreur lors de l'application du profile Firefox:", ex);
+                MessageBox.Show("Erreur lors de l'application du profil Firefox: " + ex.ToString());
             }
         }
     }

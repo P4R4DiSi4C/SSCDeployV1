@@ -1,5 +1,6 @@
 ﻿using System.Collections.ObjectModel;
 using System.Management.Automation;
+using System.Windows.Forms;
 
 namespace SSCDeploy.Actions
 {
@@ -20,7 +21,7 @@ namespace SSCDeploy.Actions
             }
             catch (System.Exception ex)
             {
-                throw new System.ApplicationException("La désactivation de l'IPV6 s'est mal déroulée:", ex);
+                MessageBox.Show("La désactivation de l'IPV6 s'est mal déroulée: " + ex.ToString());
             }
         }
 

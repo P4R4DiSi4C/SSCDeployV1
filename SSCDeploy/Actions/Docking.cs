@@ -1,27 +1,74 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.IO;
 using System.Management.Automation;
+using System.Windows.Forms;
 
 namespace SSCDeploy.Actions
 {
     public static class Docking
     {
+        private static string[] user_pinned = { Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Microsoft", "Internet Explorer", "Quick Launch", "User Pinned","Taskbar" };
+        private static DirectoryInfo dir_user_pinned = new DirectoryInfo(Path.Combine(user_pinned));
+
+        class PinnedDir
+        {
+            public string DirToPin { get; set; }
+            public string DirToUnpin { get; set; }
+        }
+
         static List<string> WinAppsToUnpin = new List<string>
         {
             "Microsoft Edge",
             "Microsoft Store"
         };
 
-        static Dictionary<string, string> AppsToPin = new Dictionary<string, string>()
+        static Dictionary<string, PinnedDir> AppsToPin = new Dictionary<string, PinnedDir>()
         {
-            { "IE", @"C:\Program Files\internet explorer\iexplore.exe"},
-            { "FIREFOX", @"C:\Program Files (x86)\Mozilla Firefox\firefox.exe" },
-            { "OUTLOOK", @"C:\Program Files (x86)\Microsoft Office\Office16\OUTLOOK.EXE" },
-            { "WORD", @"C:\Program Files (x86)\Microsoft Office\Office16\WINWORD.EXE" },
-            { "EXCEL", @"C:\Program Files (x86)\Microsoft Office\Office16\EXCEL.EXE" },
-            { "POWERPOINT", @"C:\Program Files (x86)\Microsoft Office\Office16\POWERPNT.EXE" }
+            {
+                "IE", new PinnedDir()
+                {
+                    DirToPin = @"C:\Program Files\internet explorer\iexplore.exe",
+                    DirToUnpin = Path.Combine(dir_user_pinned.FullName,"Internet Explorer.lnk")
+                }
+            },
+            {
+                "FIREFOX", new PinnedDir()
+                {
+                    DirToPin = @"C:\Program Files (x86)\Mozilla Firefox\firefox.exe",
+                    DirToUnpin = Path.Combine(dir_user_pinned.FullName,"Firefox.lnk")
+                }
+            },
+            {
+                "OUTLOOK", new PinnedDir()
+                {
+                    DirToPin = @"C:\Program Files (x86)\Microsoft Office\Office16\OUTLOOK.EXE",
+                    DirToUnpin = Path.Combine(dir_user_pinned.FullName,"Outlook 2016.lnk")
+                }
+            },
+            {
+                "WORD", new PinnedDir()
+                {
+                    DirToPin = @"C:\Program Files (x86)\Microsoft Office\Office16\WINWORD.EXE",
+                    DirToUnpin = Path.Combine(dir_user_pinned.FullName,"Word 2016.lnk")
+                }
+            },
+            {
+                "EXCEL", new PinnedDir()
+                {
+                    DirToPin = @"C:\Program Files (x86)\Microsoft Office\Office16\EXCEL.EXE",
+                    DirToUnpin = Path.Combine(dir_user_pinned.FullName,"Excel 2016.lnk")
+                }
+            },
+            {
+                "POWERPOINT", new PinnedDir()
+                {
+                    DirToPin = @"C:\Program Files (x86)\Microsoft Office\Office16\POWERPNT.EXE",
+                    DirToUnpin = Path.Combine(dir_user_pinned.FullName,"Powerpoint 2016.lnk")
+                }
+            }
         };
 
         public static void Pin()
@@ -42,10 +89,11 @@ namespace SSCDeploy.Actions
                 {
                     if (sw.BaseStream.CanWrite)
                     {
-                        foreach (KeyValuePair<string, string> app in AppsToPin)
+                        foreach (KeyValuePair<string, PinnedDir> app in AppsToPin)
                         {
-                            sw.WriteLine("Files\\syspin \"" + app.Value + "\" c:5387"); //unpin = c:5387
-                            sw.WriteLine("Files\\syspin \"" + app.Value + "\" c:5386");
+
+                            sw.WriteLine("Files\\syspin \"" + app.Value.DirToUnpin + "\" c:5387");
+                            sw.WriteLine("Files\\syspin \"" + app.Value.DirToPin + "\" c:5386");
                         }
                     }
                 }
@@ -53,9 +101,9 @@ namespace SSCDeploy.Actions
                 p.WaitForExit();
                 p.Close();
             }
-            catch (System.Exception ex)
+            catch (Exception ex)
             {
-                throw new System.ApplicationException("L'épinglage des applications Microsoft s'est mal déroulé:", ex);
+                MessageBox.Show("L'épinglage des applications Microsoft s'est mal déroulé: " + ex.ToString());
             }
         }
 
@@ -73,9 +121,9 @@ namespace SSCDeploy.Actions
                     Collection<PSObject> PSOutput = powershell_Inst.Invoke();
                 }
             }
-            catch (System.Exception ex)
+            catch (Exception ex)
             {
-                throw new System.ApplicationException("Le désépinglage des applications Microsoft s'est mal déroulé:", ex);
+                MessageBox.Show("Le désépinglage des applications Microsoft s'est mal déroulé: " + ex.ToString());
             }
         }
     }

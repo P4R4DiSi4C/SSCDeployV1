@@ -20,6 +20,10 @@ namespace SSCDeploy
             materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
         }
 
+        /// <summary>
+        /// Fonction de déploiement
+        /// </summary>
+        /// <param name="progress">Objet pour le suivi du progrès</param>
         private void Deploy(IProgress<DeployProgressReport> progress)
         {
             progress.Report(new DeployProgressReport { CurrentProgressAmount = 1 * 100 / MAX_STEPS, CurrentProgressMessage = "Désactivation suspension sélective USB..." });
@@ -50,7 +54,9 @@ namespace SSCDeploy
             FileProps.OpenPDFDetails();
         }
 
-
+        /// <summary>
+        /// Bouton de déploiement
+        /// </summary>
         private async void btn_deploy_Click(object sender, EventArgs e)
         {
             text_deploy_progress.Text = "";
