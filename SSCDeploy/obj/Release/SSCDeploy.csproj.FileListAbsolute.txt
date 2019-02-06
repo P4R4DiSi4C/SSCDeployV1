@@ -22,6 +22,7 @@ C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\bin\Release\SSCDeplo
 C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\bin\Release\SSCDeploy.exe
 C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\bin\Release\SSCDeploy.pdb
 C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\bin\Release\System.Management.Automation.xml
+C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\obj\Release\SSCDeploy.csprojAssemblyReference.cache
 C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\obj\Release\SSCDeploy.mainForm.resources
 C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\obj\Release\SSCDeploy.Properties.Resources.resources
 C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\obj\Release\SSCDeploy.csproj.GenerateResource.cache
