@@ -40,3 +40,4 @@ C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.
 C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.csproj.CopyComplete
 C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.exe
 C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.pdb
+C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.csprojAssemblyReference.cache

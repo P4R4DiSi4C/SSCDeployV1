@@ -68,6 +68,13 @@ namespace SSCDeploy.Actions
                     DirToPin = @"C:\Program Files (x86)\Microsoft Office\Office16\POWERPNT.EXE",
                     DirToUnpin = Path.Combine(dir_user_pinned.FullName,"Powerpoint 2016.lnk")
                 }
+            },
+            {
+                "ANYCONNECT", new PinnedDir()
+                {
+                    DirToPin =  @"C:\Program Files (x86)\Cisco\Cisco AnyConnect Secure Mobility Client\vpnui.exe",
+                    DirToUnpin = Path.Combine(dir_user_pinned.FullName,"Cisco AnyConnect User Interface.lnk")
+                }
             }
         };
 
@@ -91,9 +98,10 @@ namespace SSCDeploy.Actions
                     {
                         foreach (KeyValuePair<string, PinnedDir> app in AppsToPin)
                         {
-
-                            sw.WriteLine("Files\\syspin \"" + app.Value.DirToUnpin + "\" c:5387");
-                            sw.WriteLine("Files\\syspin \"" + app.Value.DirToPin + "\" c:5386");
+                            sw.WriteLine("Files\\syspin \"" + app.Value.DirToUnpin + "\" c:5387"); //Unpin from taskbar
+                            sw.WriteLine("Files\\syspin \"" + app.Value.DirToUnpin + "\" c:51394"); //Unpin from start
+                            sw.WriteLine("Files\\syspin \"" + app.Value.DirToPin + "\" c:5386"); //Pin to taskbar
+                            sw.WriteLine("Files\\syspin \"" + app.Value.DirToPin + "\" c:51201"); //Pin to start
                         }
                     }
                 }
