@@ -2,6 +2,7 @@
 using System.IO.Compression;
 using System.IO;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace SSCDeploy.Actions
 {
@@ -32,6 +33,11 @@ namespace SSCDeploy.Actions
         {
             try
             {
+                foreach (var process in Process.GetProcessesByName("firefox"))
+                {
+                    process.Kill();
+                }
+
                 if (!Directory.Exists(mozillaDir.FullName))
                 {
                     try

@@ -91,6 +91,10 @@ namespace SSCDeploy
 
         private void btn_onedrive_Click(object sender, EventArgs e)
         {
+            foreach (var process in Process.GetProcessesByName("OneDrive"))
+            {
+                process.Kill();
+            }
             Process.Start("appwiz.cpl");
         }
     }
