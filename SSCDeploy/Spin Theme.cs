@@ -1,4 +1,5 @@
-﻿#region NameSpaces
+﻿
+#region NameSpaces
 
 using System;
 using System.Collections.Generic;

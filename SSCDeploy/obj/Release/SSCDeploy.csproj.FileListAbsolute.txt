@@ -6,10 +6,6 @@ F:\Données\Documents\Visual Studio 2017\Projects\SSCDeploy\SSCDeploy\bin\Releas
 F:\Données\Documents\Visual Studio 2017\Projects\SSCDeploy\SSCDeploy\bin\Release\SSCDeploy.exe.config
 F:\Données\Documents\Visual Studio 2017\Projects\SSCDeploy\SSCDeploy\bin\Release\SSCDeploy.exe
 F:\Données\Documents\Visual Studio 2017\Projects\SSCDeploy\SSCDeploy\bin\Release\SSCDeploy.pdb
-F:\Données\Documents\Visual Studio 2017\Projects\SSCDeploy\SSCDeploy\bin\Release\SpinTheme.dll
-F:\Données\Documents\Visual Studio 2017\Projects\SSCDeploy\SSCDeploy\bin\Release\System.Management.Automation.dll
-F:\Données\Documents\Visual Studio 2017\Projects\SSCDeploy\SSCDeploy\bin\Release\Microsoft.Management.Infrastructure.dll
-F:\Données\Documents\Visual Studio 2017\Projects\SSCDeploy\SSCDeploy\bin\Release\Microsoft.Management.Infrastructure.Native.dll
 F:\Données\Documents\Visual Studio 2017\Projects\SSCDeploy\SSCDeploy\bin\Release\System.Management.Automation.xml
 F:\Données\Documents\Visual Studio 2017\Projects\SSCDeploy\SSCDeploy\obj\Release\SSCDeploy.mainForm.resources
 F:\Données\Documents\Visual Studio 2017\Projects\SSCDeploy\SSCDeploy\obj\Release\SSCDeploy.Properties.Resources.resources
@@ -18,3 +14,4 @@ F:\Données\Documents\Visual Studio 2017\Projects\SSCDeploy\SSCDeploy\obj\Releas
 F:\Données\Documents\Visual Studio 2017\Projects\SSCDeploy\SSCDeploy\obj\Release\SSCDeploy.csproj.CopyComplete
 F:\Données\Documents\Visual Studio 2017\Projects\SSCDeploy\SSCDeploy\obj\Release\SSCDeploy.exe
 F:\Données\Documents\Visual Studio 2017\Projects\SSCDeploy\SSCDeploy\obj\Release\SSCDeploy.pdb
+F:\Données\Documents\Visual Studio 2017\Projects\SSCDeploy\SSCDeploy\obj\Release\SSCDeploy.csprojAssemblyReference.cache

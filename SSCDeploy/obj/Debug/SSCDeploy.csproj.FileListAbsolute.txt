@@ -6,11 +6,8 @@ F:\Données\Documents\Visual Studio 2017\Projects\SSCDeploy\SSCDeploy\bin\Debug\
 F:\Données\Documents\Visual Studio 2017\Projects\SSCDeploy\SSCDeploy\bin\Debug\SSCDeploy.exe.config
 F:\Données\Documents\Visual Studio 2017\Projects\SSCDeploy\SSCDeploy\bin\Debug\SSCDeploy.exe
 F:\Données\Documents\Visual Studio 2017\Projects\SSCDeploy\SSCDeploy\bin\Debug\SSCDeploy.pdb
-F:\Données\Documents\Visual Studio 2017\Projects\SSCDeploy\SSCDeploy\bin\Debug\SpinTheme.dll
-F:\Données\Documents\Visual Studio 2017\Projects\SSCDeploy\SSCDeploy\bin\Debug\System.Management.Automation.dll
-F:\Données\Documents\Visual Studio 2017\Projects\SSCDeploy\SSCDeploy\bin\Debug\Microsoft.Management.Infrastructure.dll
-F:\Données\Documents\Visual Studio 2017\Projects\SSCDeploy\SSCDeploy\bin\Debug\Microsoft.Management.Infrastructure.Native.dll
 F:\Données\Documents\Visual Studio 2017\Projects\SSCDeploy\SSCDeploy\bin\Debug\System.Management.Automation.xml
+F:\Données\Documents\Visual Studio 2017\Projects\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.csprojAssemblyReference.cache
 F:\Données\Documents\Visual Studio 2017\Projects\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.mainForm.resources
 F:\Données\Documents\Visual Studio 2017\Projects\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.Properties.Resources.resources
 F:\Données\Documents\Visual Studio 2017\Projects\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.csproj.GenerateResource.cache
