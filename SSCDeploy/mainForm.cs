@@ -1,23 +1,18 @@
-﻿using MaterialSkin;
-using MaterialSkin.Controls;
-using SSCDeploy.Actions;
+﻿using SSCDeploy.Actions;
 using System;
 using System.Diagnostics;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace SSCDeploy
 {
-    public partial class mainForm : MaterialForm
+    public partial class mainForm : Form
     {
         private const int MAX_STEPS = 9;
 
         public mainForm()
         {
             InitializeComponent();
-            var materialSkinManager = MaterialSkinManager.Instance;
-            materialSkinManager.AddFormToManage(this);
-            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
-            materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
         }
 
         /// <summary>
@@ -96,6 +91,11 @@ namespace SSCDeploy
                 process.Kill();
             }
             Process.Start("appwiz.cpl");
+        }
+
+        private void exit_btn_Click(object sender, EventArgs e)
+        {
+           Application.Exit();
         }
     }
 }
