@@ -1,27 +1,29 @@
-﻿# Obtient les interfaces USB
-$hubs = Get-WmiObject Win32_Serialport | Select-Object Name,DeviceID,Description
+﻿$hubs = Get-WmiObject Win32_USBHub
+$controllers = Get-WmiObject Win32_USBControllerDevice
 
-# Obtient tous les objets avec gestion d'alimentation
 $powerMgmt = Get-WmiObject MSPower_DeviceEnable -Namespace root\wmi
 
-# Parcourt les objets avec gestion d'alimentation
 foreach ($p in $powerMgmt)
 {
-	# Stocke le nom d'instance'
-    $IN = $p.InstanceName.ToUpper()
-
-	# Parcourt chaque interface USB
+	$IN = $p.InstanceName.ToUpper()
+	
     foreach ($h in $hubs)
-    {
-		# Stocke l'ID de l'interface
-        $PNPDI = $h.PNPDeviceID
-
-		# Si l'instance correspond à l'ID
+	{
+		$PNPDI = $h.PNPDeviceID
         if ($IN -like "*$PNPDI*")
         {
-			# Désactive la gestion d'alimentation
             $p.enable = $False
             $p.psbase.put()
         }
-    }
+	}
+
+    foreach ($h in $controllers)
+	{
+		$PNPDI = $h.PNPDeviceID
+        if ($IN -like "*$PNPDI*")
+        {
+            $p.enable = $False
+            $p.psbase.put()
+        }
+	}
 }

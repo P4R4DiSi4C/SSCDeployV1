@@ -98,9 +98,11 @@ namespace SSCDeploy.Actions
                     {
                         foreach (KeyValuePair<string, PinnedDir> app in AppsToPin)
                         {
+                            
                             sw.WriteLine("Files\\syspin \"" + app.Value.DirToUnpin + "\" c:5387"); //Unpin from taskbar
                             sw.WriteLine("Files\\syspin \"" + app.Value.DirToPin + "\" c:51394"); //Unpin from start
 
+                            // Peut aussi check if Files.Exist
                             sw.WriteLine("Files\\syspin \"" + app.Value.DirToPin + "\" c:5386"); //Pin to taskbar
                             sw.WriteLine("Files\\syspin \"" + app.Value.DirToPin + "\" c:51201"); //Pin to start
                         }

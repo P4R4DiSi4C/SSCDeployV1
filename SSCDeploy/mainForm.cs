@@ -91,7 +91,7 @@ namespace SSCDeploy
 
         private void btn_onedrive_Click(object sender, EventArgs e)
         {
-            Process.Start("ms-settings:appsfeatures-app");
+            Process.Start("appwiz.cpl");
         }
     }
 }
