@@ -110,7 +110,6 @@ namespace SSCDeploy.Actions
                 }
 
                 p.WaitForExit();
-                p.Close();
             }
             catch (Exception ex)
             {

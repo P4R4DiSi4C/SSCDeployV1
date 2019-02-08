@@ -60,7 +60,7 @@
             this.spinForm1.HeaderTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
             this.spinForm1.Location = new System.Drawing.Point(0, 0);
             this.spinForm1.Name = "spinForm1";
-            this.spinForm1.Size = new System.Drawing.Size(452, 280);
+            this.spinForm1.Size = new System.Drawing.Size(452, 313);
             this.spinForm1.TabIndex = 0;
             this.spinForm1.Text = "SSCDeploy";
             this.spinForm1.TitleTextPostion = SpinTheme.SpinForm.TitlePostion.Left;
@@ -101,7 +101,7 @@
             this.spinHorizontalTabControl1.Name = "spinHorizontalTabControl1";
             this.spinHorizontalTabControl1.RoundRadius = 1;
             this.spinHorizontalTabControl1.SelectedIndex = 0;
-            this.spinHorizontalTabControl1.Size = new System.Drawing.Size(452, 229);
+            this.spinHorizontalTabControl1.Size = new System.Drawing.Size(452, 262);
             this.spinHorizontalTabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.spinHorizontalTabControl1.Speed = 40;
             this.spinHorizontalTabControl1.TabColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
@@ -120,7 +120,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 44);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(444, 181);
+            this.tabPage1.Size = new System.Drawing.Size(444, 214);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "DÉPLOYER";
             // 
@@ -134,7 +134,7 @@
             this.text_deploy_progress.Location = new System.Drawing.Point(0, 1);
             this.text_deploy_progress.Name = "text_deploy_progress";
             this.text_deploy_progress.ReadOnly = false;
-            this.text_deploy_progress.Size = new System.Drawing.Size(276, 180);
+            this.text_deploy_progress.Size = new System.Drawing.Size(276, 213);
             this.text_deploy_progress.TabIndex = 1;
             this.text_deploy_progress.WordWrap = true;
             // 
@@ -146,7 +146,7 @@
             this.spinButton1.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(212)))), ((int)(((byte)(46)))));
             this.spinButton1.HoverTextColor = System.Drawing.Color.White;
             this.spinButton1.IsEnabled = true;
-            this.spinButton1.Location = new System.Drawing.Point(295, 137);
+            this.spinButton1.Location = new System.Drawing.Point(295, 167);
             this.spinButton1.Name = "spinButton1";
             this.spinButton1.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(144)))), ((int)(((byte)(210)))));
             this.spinButton1.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(151)))), ((int)(((byte)(222)))));
@@ -168,7 +168,7 @@
             this.deploy_progressbar.EndStyle = System.Drawing.Drawing2D.LineCap.Custom;
             this.deploy_progressbar.FillInside = false;
             this.deploy_progressbar.InsideColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.deploy_progressbar.Location = new System.Drawing.Point(295, 0);
+            this.deploy_progressbar.Location = new System.Drawing.Point(295, 18);
             this.deploy_progressbar.Maximum = 100;
             this.deploy_progressbar.Name = "deploy_progressbar";
             this.deploy_progressbar.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(151)))), ((int)(((byte)(222)))));
@@ -191,7 +191,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 44);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(444, 181);
+            this.tabPage2.Size = new System.Drawing.Size(444, 214);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "EXTRA";
             // 
@@ -203,7 +203,7 @@
             this.spinButton5.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(212)))), ((int)(((byte)(46)))));
             this.spinButton5.HoverTextColor = System.Drawing.Color.White;
             this.spinButton5.IsEnabled = true;
-            this.spinButton5.Location = new System.Drawing.Point(280, 119);
+            this.spinButton5.Location = new System.Drawing.Point(156, 83);
             this.spinButton5.Name = "spinButton5";
             this.spinButton5.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(144)))), ((int)(((byte)(210)))));
             this.spinButton5.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(151)))), ((int)(((byte)(222)))));
@@ -225,7 +225,7 @@
             this.spinButton4.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(212)))), ((int)(((byte)(46)))));
             this.spinButton4.HoverTextColor = System.Drawing.Color.White;
             this.spinButton4.IsEnabled = true;
-            this.spinButton4.Location = new System.Drawing.Point(280, 34);
+            this.spinButton4.Location = new System.Drawing.Point(156, 149);
             this.spinButton4.Name = "spinButton4";
             this.spinButton4.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(144)))), ((int)(((byte)(210)))));
             this.spinButton4.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(151)))), ((int)(((byte)(222)))));
@@ -247,7 +247,7 @@
             this.spinButton3.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(212)))), ((int)(((byte)(46)))));
             this.spinButton3.HoverTextColor = System.Drawing.Color.White;
             this.spinButton3.IsEnabled = true;
-            this.spinButton3.Location = new System.Drawing.Point(34, 119);
+            this.spinButton3.Location = new System.Drawing.Point(156, 17);
             this.spinButton3.Name = "spinButton3";
             this.spinButton3.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(144)))), ((int)(((byte)(210)))));
             this.spinButton3.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(151)))), ((int)(((byte)(222)))));
@@ -269,7 +269,7 @@
             this.spinButton2.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(212)))), ((int)(((byte)(46)))));
             this.spinButton2.HoverTextColor = System.Drawing.Color.White;
             this.spinButton2.IsEnabled = true;
-            this.spinButton2.Location = new System.Drawing.Point(34, 34);
+            this.spinButton2.Location = new System.Drawing.Point(0, 0);
             this.spinButton2.Name = "spinButton2";
             this.spinButton2.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(144)))), ((int)(((byte)(210)))));
             this.spinButton2.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(151)))), ((int)(((byte)(222)))));
@@ -277,17 +277,15 @@
             this.spinButton2.PushedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(174)))), ((int)(((byte)(72)))));
             this.spinButton2.PushedColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(16)))));
             this.spinButton2.PushedTextColor = System.Drawing.Color.White;
-            this.spinButton2.RoundRadius = 1;
-            this.spinButton2.Size = new System.Drawing.Size(141, 32);
-            this.spinButton2.TabIndex = 0;
-            this.spinButton2.Text = "ONEDRIVE";
-            this.spinButton2.Click += new System.EventHandler(this.btn_onedrive_Click);
+            this.spinButton2.RoundRadius = 5;
+            this.spinButton2.Size = new System.Drawing.Size(0, 0);
+            this.spinButton2.TabIndex = 4;
             // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(452, 280);
+            this.ClientSize = new System.Drawing.Size(452, 313);
             this.Controls.Add(this.spinForm1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

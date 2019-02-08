@@ -15,3 +15,20 @@ F:\Données\Documents\Visual Studio 2017\Projects\SSCDeploy\SSCDeploy\obj\Debug\
 F:\Données\Documents\Visual Studio 2017\Projects\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.csproj.CopyComplete
 F:\Données\Documents\Visual Studio 2017\Projects\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.exe
 F:\Données\Documents\Visual Studio 2017\Projects\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.pdb
+C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\bin\Debug\SSCDeploy.exe
+C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\bin\Debug\Files\syspin.exe
+C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\bin\Debug\Files\dummy.pdf
+C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\bin\Debug\Files\FirefoxProfile.zip
+C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\bin\Debug\Files\NICPowerSave.ps1
+C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\bin\Debug\Files\USBPowerSave.ps1
+C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\bin\Debug\SSCDeploy.exe.config
+C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\bin\Debug\SSCDeploy.pdb
+C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\bin\Debug\System.Management.Automation.xml
+C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.csprojAssemblyReference.cache
+C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.mainForm.resources
+C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.Properties.Resources.resources
+C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.csproj.GenerateResource.cache
+C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.csproj.CoreCompileInputs.cache
+C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.csproj.CopyComplete
+C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.exe
+C:\Users\dcarvalh\Documents\Coding\EPFL\SSCDeploy\SSCDeploy\obj\Debug\SSCDeploy.pdb

@@ -92,6 +92,7 @@
     <Compile Include="Actions\PowerCFG.cs" />
     <Compile Include="Actions\SelectiveUSB.cs" />
     <Compile Include="Actions\Sleep.cs" />
+    <Compile Include="Actions\Onedrive.cs" />
     <Compile Include="Actions\USBPowerSave.cs" />
     <Compile Include="mainForm.cs">
       <SubType>Form</SubType>

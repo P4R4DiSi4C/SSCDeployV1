@@ -8,7 +8,7 @@ namespace SSCDeploy
 {
     public partial class mainForm : Form
     {
-        private const int MAX_STEPS = 9;
+        private const int MAX_STEPS = 10;
 
         public mainForm()
         {
@@ -45,7 +45,10 @@ namespace SSCDeploy
             progress.Report(new DeployProgressReport { CurrentProgressAmount = 8 * 100 / MAX_STEPS, CurrentProgressMessage = "Désactivation mise en veille USB..." });
             USBPowerSave.Disable();
 
-            progress.Report(new DeployProgressReport { CurrentProgressAmount = 9 * 100 / MAX_STEPS, CurrentProgressMessage = "Adobe par défaut S.V.P ..." });
+            progress.Report(new DeployProgressReport { CurrentProgressAmount = 9 * 100 / MAX_STEPS, CurrentProgressMessage = "Désinstallation de Onedrive..." });
+            Onedrive.Uninstall();
+
+            progress.Report(new DeployProgressReport { CurrentProgressAmount = 10 * 100 / MAX_STEPS, CurrentProgressMessage = "Adobe par défaut S.V.P ..." });
             FileProps.OpenPDFDetails();
         }
 
@@ -82,15 +85,6 @@ namespace SSCDeploy
         private void btn_ie_Click(object sender, EventArgs e)
         {
             Process.Start("iexplore");
-        }
-
-        private void btn_onedrive_Click(object sender, EventArgs e)
-        {
-            foreach (var process in Process.GetProcessesByName("OneDrive"))
-            {
-                process.Kill();
-            }
-            Process.Start("appwiz.cpl");
         }
 
         private void exit_btn_Click(object sender, EventArgs e)

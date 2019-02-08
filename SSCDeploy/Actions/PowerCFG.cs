@@ -19,7 +19,6 @@ namespace SSCDeploy.Actions
             p.StartInfo = cmd;
             p.Start();
             p.WaitForExit();
-            p.Close();
         }
     }
 }
