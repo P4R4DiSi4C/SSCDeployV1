@@ -9,6 +9,9 @@ namespace SSCDeploy
 {
     public partial class mainForm : Form
     {
+        private bool formLoaded;
+        private bool ignore_radio_custom;
+        private bool ignore_check;
 
         public mainForm()
         {
@@ -21,7 +24,7 @@ namespace SSCDeploy
         /// <param name="progress">Objet pour le suivi du progrès</param>
         private void Deploy(IProgress<DeployProgressReport> progress)
         {
-            int max_steps = tabPage3.Controls.OfType<SpinCheckBox>().Count(c => c.Checked);
+            int max_steps = actions_groupbox.Controls.OfType<SpinCheckBox>().Count(c => c.Checked);
             int tasks_counter = 0;
 
             if (check_SelectUSB.Checked)
@@ -145,7 +148,72 @@ namespace SSCDeploy
 
         private void btn_Restart_Click(object sender, EventArgs e)
         {
+            Process.Start("shutdown.exe", "-r -t 00");
+        }
 
+        private void radiobuttons_checked_changed(object sender)
+        {
+            if (formLoaded)
+            {
+                int max_steps = presets_group.Controls.OfType<SpinRadioButton>().Count(c => c.Checked);
+                ignore_check = true;
+                SpinRadioButton clicked_radio = (SpinRadioButton)sender;
+
+                foreach (SpinRadioButton radiobutton in presets_group.Controls.OfType<SpinRadioButton>())
+                {
+                    if(radiobutton == clicked_radio)
+                    {
+                        radiobutton.Enabled = false;
+                    }
+                    else
+                    {
+                        radiobutton.Enabled = true;
+                    }
+                }
+
+                if (radio_new.Checked)
+                {
+                    foreach (SpinCheckBox action_checkbox in actions_groupbox.Controls.OfType<SpinCheckBox>())
+                    {
+                        action_checkbox.Checked = true;
+                    }
+                }
+                else if (radio_update.Checked)
+                {
+                    foreach (SpinCheckBox action_checkbox in actions_groupbox.Controls.OfType<SpinCheckBox>())
+                    {
+                        action_checkbox.Checked = true;
+                    }
+
+                    check_Firefox.Checked = false;
+                    check_unpin.Checked = false;
+                    check_pin.Checked = false;
+                }
+                else if (radio_custom.Checked && !ignore_radio_custom)
+                {
+                    foreach (SpinCheckBox action_checkbox in actions_groupbox.Controls.OfType<SpinCheckBox>())
+                    {
+                        action_checkbox.Checked = false;
+                    }
+                }
+
+                ignore_check = false;
+            }
+        }
+
+        private void checkbox_actions_checked_changed(object sender)
+        {
+            if (formLoaded && !ignore_check)
+            {
+                ignore_radio_custom = true;
+                radio_custom.Checked = true;
+                ignore_radio_custom = false;
+            }
+        }
+
+        private void mainForm_Shown(object sender, EventArgs e)
+        {
+            formLoaded = true;
         }
     }
 }

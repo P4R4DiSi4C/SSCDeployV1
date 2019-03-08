@@ -4155,7 +4155,8 @@ public class SpinRadioButton : Control
 
     protected override void OnMouseDown(MouseEventArgs e)
     {
-        _Checked = !Checked;
+        _Checked = true;
+        //_Checked = !Checked;
         UpdateState();
         base.OnMouseDown(e);
         Invalidate();
