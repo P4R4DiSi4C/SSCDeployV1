@@ -25,7 +25,7 @@ namespace SSCDeploy.Actions
 
                 p.StartInfo = cmd;
                 p.Start();
-                p.Close();
+                p.WaitForExit();
             }
             catch (Exception ex)
             {
