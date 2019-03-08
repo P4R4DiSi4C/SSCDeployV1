@@ -90,6 +90,7 @@
     <Compile Include="Actions\IPV6.cs" />
     <Compile Include="Actions\NICPowerSave.cs" />
     <Compile Include="Actions\PowerCFG.cs" />
+    <Compile Include="Actions\Regional.cs" />
     <Compile Include="Actions\SelectiveUSB.cs" />
     <Compile Include="Actions\Sleep.cs" />
     <Compile Include="Actions\Onedrive.cs" />

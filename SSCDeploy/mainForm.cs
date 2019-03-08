@@ -3,12 +3,12 @@ using System;
 using System.Diagnostics;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Linq;
 
 namespace SSCDeploy
 {
     public partial class mainForm : Form
     {
-        private const int MAX_STEPS = 10;
 
         public mainForm()
         {
@@ -21,35 +21,86 @@ namespace SSCDeploy
         /// <param name="progress">Objet pour le suivi du progrès</param>
         private void Deploy(IProgress<DeployProgressReport> progress)
         {
-            progress.Report(new DeployProgressReport { CurrentProgressAmount = 1 * 100 / MAX_STEPS, CurrentProgressMessage = "Désactivation suspension sélective USB..." });
-            SelectiveUSB.Disable();
+            int max_steps = tabPage3.Controls.OfType<SpinCheckBox>().Count(c => c.Checked);
+            int tasks_counter = 0;
 
-            progress.Report(new DeployProgressReport { CurrentProgressAmount = 2 * 100 / MAX_STEPS, CurrentProgressMessage = "Désactivation mise en veille sous secteur..." });
-            Sleep.Disable();
+            if (check_SelectUSB.Checked)
+            {
+                tasks_counter++;
+                progress.Report(new DeployProgressReport { CurrentProgressAmount = tasks_counter * 100 / max_steps, CurrentProgressMessage = "Désactivation suspension sélective USB..." });
+                SelectiveUSB.Disable();
+            }
 
-            progress.Report(new DeployProgressReport { CurrentProgressAmount = 3 * 100 / MAX_STEPS, CurrentProgressMessage = "Désactivation de l'IPV6..." });
-            IPV6.Disable();
+            if (check_Sleep.Checked)
+            {
+                tasks_counter++;
+                progress.Report(new DeployProgressReport { CurrentProgressAmount = tasks_counter * 100 / max_steps, CurrentProgressMessage = "Désactivation mise en veille sous secteur..." });
+                Sleep.Disable();
+            }
 
-            progress.Report(new DeployProgressReport { CurrentProgressAmount = 4 * 100 / MAX_STEPS, CurrentProgressMessage = "Désépinglage des applications Microsoft..." });
-            Docking.Unpin();
+            if (check_IPV6.Checked)
+            {
+                tasks_counter++;
+                progress.Report(new DeployProgressReport { CurrentProgressAmount = tasks_counter * 100 / max_steps, CurrentProgressMessage = "Désactivation de l'IPV6..." });
+                IPV6.Disable();
+            }
 
-            progress.Report(new DeployProgressReport { CurrentProgressAmount = 5 * 100 / MAX_STEPS, CurrentProgressMessage = "Épinglage des applications par défaut..." });
-            Docking.Pin();
+            if (check_unpin.Checked)
+            {
+                tasks_counter++;
+                progress.Report(new DeployProgressReport { CurrentProgressAmount = tasks_counter * 100 / max_steps, CurrentProgressMessage = "Désépinglage des applications Microsoft..." });
+                Docking.Unpin();
+            }
 
-            progress.Report(new DeployProgressReport { CurrentProgressAmount = 6 * 100 / MAX_STEPS, CurrentProgressMessage = "Mise en place du profil Firefox..." });
-            Firefox.Profilize();
-            
-            progress.Report(new DeployProgressReport { CurrentProgressAmount = 7 * 100 / MAX_STEPS, CurrentProgressMessage = "Désactivation mise en veille cartes réseau..." });
-            NICPowerSave.Disable();
+            if(check_pin.Checked)
+            {
+                tasks_counter++;
+                progress.Report(new DeployProgressReport { CurrentProgressAmount = tasks_counter * 100 / max_steps, CurrentProgressMessage = "Épinglage des applications par défaut..." });
+                Docking.Pin();
+            }
 
-            progress.Report(new DeployProgressReport { CurrentProgressAmount = 8 * 100 / MAX_STEPS, CurrentProgressMessage = "Désactivation mise en veille USB..." });
-            USBPowerSave.Disable();
+            if (check_Firefox.Checked)
+            {
+                tasks_counter++;
+                progress.Report(new DeployProgressReport { CurrentProgressAmount = tasks_counter * 100 / max_steps, CurrentProgressMessage = "Mise en place du profil Firefox..." });
+                Firefox.Profilize();
+            }
 
-            progress.Report(new DeployProgressReport { CurrentProgressAmount = 9 * 100 / MAX_STEPS, CurrentProgressMessage = "Désinstallation de Onedrive..." });
-            Onedrive.Uninstall();
+            if (check_NICSleep.Checked)
+            {
+                tasks_counter++;
+                progress.Report(new DeployProgressReport { CurrentProgressAmount = tasks_counter * 100 / max_steps, CurrentProgressMessage = "Désactivation mise en veille cartes réseau..." });
+                NICPowerSave.Disable();
+            }
 
-            progress.Report(new DeployProgressReport { CurrentProgressAmount = 10 * 100 / MAX_STEPS, CurrentProgressMessage = "Adobe par défaut S.V.P ..." });
-            FileProps.OpenPDFDetails();
+            if (check_USBSleep.Checked)
+            {
+                tasks_counter++;
+                progress.Report(new DeployProgressReport { CurrentProgressAmount = tasks_counter * 100 / max_steps, CurrentProgressMessage = "Désactivation mise en veille USB..." });
+                USBPowerSave.Disable();
+            }
+
+            if (check_OneDrive.Checked)
+            {
+                tasks_counter++;
+                progress.Report(new DeployProgressReport { CurrentProgressAmount = tasks_counter * 100 / max_steps, CurrentProgressMessage = "Désinstallation de Onedrive..." });
+                Onedrive.Uninstall();
+            }
+
+            if (check_region.Checked)
+            {
+                tasks_counter++;
+                progress.Report(new DeployProgressReport { CurrentProgressAmount = tasks_counter * 100 / max_steps, CurrentProgressMessage = "Application options régionales..." });
+                Regional.Set_Thousands_Separator();
+                Regional.Set_Decimal_Separator();
+            }
+
+            if (check_Adobe.Checked)
+            {
+                tasks_counter++;
+                progress.Report(new DeployProgressReport { CurrentProgressAmount = tasks_counter * 100 / max_steps, CurrentProgressMessage = "Adobe par défaut S.V.P ..." });
+                FileProps.OpenPDFDetails();
+            }
         }
 
         /// <summary>
@@ -90,6 +141,11 @@ namespace SSCDeploy
         private void exit_btn_Click(object sender, EventArgs e)
         {
            Application.Exit();
+        }
+
+        private void btn_Restart_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
