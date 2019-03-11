@@ -38,6 +38,7 @@
             this.radio_new = new SpinRadioButton();
             this.radio_update = new SpinRadioButton();
             this.actions_groupbox = new SpinGroupBox();
+            this.check_edgedesk = new SpinCheckBox();
             this.check_SelectUSB = new SpinCheckBox();
             this.check_Sleep = new SpinCheckBox();
             this.check_region = new SpinCheckBox();
@@ -61,7 +62,6 @@
             this.btn_privacy = new SpinButton();
             this.btn_default = new SpinButton();
             this.spinButton2 = new SpinButton();
-            this.check_edgedesk = new SpinCheckBox();
             this.SSCDeploy_SpinForm.SuspendLayout();
             this.spinHorizontalTabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -260,6 +260,26 @@
             this.actions_groupbox.Size = new System.Drawing.Size(437, 252);
             this.actions_groupbox.TabIndex = 30;
             this.actions_groupbox.Text = "ACTIONS À EFFECTUER";
+            // 
+            // check_edgedesk
+            // 
+            this.check_edgedesk.BackColor = System.Drawing.Color.Transparent;
+            this.check_edgedesk.CheckBackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(151)))), ((int)(((byte)(222)))));
+            this.check_edgedesk.CheckBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(71)))), ((int)(((byte)(114)))));
+            this.check_edgedesk.CheckColor = System.Drawing.Color.White;
+            this.check_edgedesk.Checked = true;
+            this.check_edgedesk.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.check_edgedesk.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.check_edgedesk.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
+            this.check_edgedesk.Location = new System.Drawing.Point(304, 191);
+            this.check_edgedesk.Name = "check_edgedesk";
+            this.check_edgedesk.Size = new System.Drawing.Size(120, 17);
+            this.check_edgedesk.TabIndex = 24;
+            this.check_edgedesk.Text = "Sup. Edge bureau";
+            this.check_edgedesk.UnCheckBackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
+            this.check_edgedesk.UnCheckBorderColor = System.Drawing.Color.Black;
+            this.check_edgedesk.UnCheckColor = System.Drawing.Color.Gray;
+            this.check_edgedesk.CheckedChanged += new SpinCheckBox.CheckedChangedEventHandler(this.checkbox_actions_checked_changed);
             // 
             // check_SelectUSB
             // 
@@ -703,25 +723,6 @@
             this.spinButton2.RoundRadius = 5;
             this.spinButton2.Size = new System.Drawing.Size(0, 0);
             this.spinButton2.TabIndex = 4;
-            // 
-            // check_edgedesk
-            // 
-            this.check_edgedesk.BackColor = System.Drawing.Color.Transparent;
-            this.check_edgedesk.CheckBackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(151)))), ((int)(((byte)(222)))));
-            this.check_edgedesk.CheckBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(71)))), ((int)(((byte)(114)))));
-            this.check_edgedesk.CheckColor = System.Drawing.Color.White;
-            this.check_edgedesk.Checked = true;
-            this.check_edgedesk.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.check_edgedesk.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.check_edgedesk.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
-            this.check_edgedesk.Location = new System.Drawing.Point(304, 191);
-            this.check_edgedesk.Name = "check_edgedesk";
-            this.check_edgedesk.Size = new System.Drawing.Size(120, 17);
-            this.check_edgedesk.TabIndex = 24;
-            this.check_edgedesk.Text = "Sup. Edge bureau";
-            this.check_edgedesk.UnCheckBackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
-            this.check_edgedesk.UnCheckBorderColor = System.Drawing.Color.Black;
-            this.check_edgedesk.UnCheckColor = System.Drawing.Color.Gray;
             // 
             // mainForm
             // 

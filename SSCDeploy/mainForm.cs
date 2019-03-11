@@ -163,7 +163,6 @@ namespace SSCDeploy
         {
             if (formLoaded)
             {
-                int max_steps = presets_group.Controls.OfType<SpinRadioButton>().Count(c => c.Checked);
                 ignore_check = true;
                 SpinRadioButton clicked_radio = (SpinRadioButton)sender;
 
@@ -213,9 +212,16 @@ namespace SSCDeploy
         {
             if (formLoaded && !ignore_check)
             {
-                ignore_radio_custom = true;
-                radio_custom.Checked = true;
-                ignore_radio_custom = false;
+                if (actions_groupbox.Controls.OfType<SpinCheckBox>().Count() == actions_groupbox.Controls.OfType<SpinCheckBox>().Count(c => c.Checked))
+                {
+                    radio_new.Checked = true;
+                }
+                else
+                {
+                    ignore_radio_custom = true;
+                    radio_custom.Checked = true;
+                    ignore_radio_custom = false;
+                }
             }
         }
 

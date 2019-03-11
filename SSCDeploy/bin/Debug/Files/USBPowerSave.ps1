@@ -1,7 +1,12 @@
-﻿$hubs = Get-WmiObject Win32_USBHub
+﻿# Obtient les hub usb
+$hubs = Get-WmiObject Win32_USBHub
+
+# Obtient les controlleurs usb
 $controllers = Get-WmiObject Win32_USBControllerDevice
 
+# Coche gestion d'alimentation
 $powerMgmt = Get-WmiObject MSPower_DeviceEnable -Namespace root\wmi
+
 
 foreach ($p in $powerMgmt)
 {
