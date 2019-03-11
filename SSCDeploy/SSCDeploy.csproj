@@ -84,6 +84,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Actions\DeployProgressReport.cs" />
+    <Compile Include="Actions\Desktop.cs" />
     <Compile Include="Actions\Docking.cs" />
     <Compile Include="Actions\FileProps.cs" />
     <Compile Include="Actions\Firefox.cs" />

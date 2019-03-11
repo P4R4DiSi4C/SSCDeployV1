@@ -27,6 +27,7 @@ namespace SSCDeploy
             int max_steps = actions_groupbox.Controls.OfType<SpinCheckBox>().Count(c => c.Checked);
             int tasks_counter = 0;
 
+            
             if (check_SelectUSB.Checked)
             {
                 tasks_counter++;
@@ -98,10 +99,17 @@ namespace SSCDeploy
                 Regional.Set_Decimal_Separator();
             }
 
+            if(check_edgedesk.Checked)
+            {
+                tasks_counter++;
+                progress.Report(new DeployProgressReport { CurrentProgressAmount = tasks_counter * 100 / max_steps, CurrentProgressMessage = "Supression îcone Edge du bureau..." });
+                Desktop.Delete_Edge_Icon();
+            }
+
             if (check_Adobe.Checked)
             {
                 tasks_counter++;
-                progress.Report(new DeployProgressReport { CurrentProgressAmount = tasks_counter * 100 / max_steps, CurrentProgressMessage = "Adobe par défaut S.V.P ..." });
+                progress.Report(new DeployProgressReport { CurrentProgressAmount = tasks_counter * 100 / max_steps, CurrentProgressMessage = "Adobe par défaut S.V.P..." });
                 FileProps.OpenPDFDetails();
             }
         }
@@ -122,7 +130,7 @@ namespace SSCDeploy
             // Run operation in another thread
             await Task.Run(() => Deploy(progress_report));
 
-            // TODO: Do something after all calculations
+            // Do something after all calculations
             text_deploy_progress.Text += "Déploiement terminé";
         }
 

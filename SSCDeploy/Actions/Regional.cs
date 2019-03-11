@@ -1,5 +1,6 @@
 ﻿using Microsoft.Win32;
 using System;
+using System.Windows.Forms;
 
 namespace SSCDeploy.Actions
 {
@@ -8,17 +9,31 @@ namespace SSCDeploy.Actions
 
         public static void Set_Thousands_Separator()
         {
-            using (var regional_key = Registry.CurrentUser.OpenSubKey(@"Control Panel\International",true))
+            try
             {
-                regional_key.SetValue("sThousand", "'");
+                using (var regional_key = Registry.CurrentUser.OpenSubKey(@"Control Panel\International", true))
+                {
+                    regional_key.SetValue("sThousand", "'");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("L'application des paramètres régionaux pour les milliers s'est mal déroulé: " + ex.ToString());
             }
         }
 
         public static void Set_Decimal_Separator()
         {
-            using (var regional_key = Registry.CurrentUser.OpenSubKey(@"Control Panel\International",true))
+            try
             {
-                regional_key.SetValue("sDecimal", ".");
+                using (var regional_key = Registry.CurrentUser.OpenSubKey(@"Control Panel\International", true))
+                {
+                    regional_key.SetValue("sDecimal", ".");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("L'application des paramètres régionaux pour les décimales s'est mal déroulé: " + ex.ToString());
             }
         }
     }

@@ -61,6 +61,7 @@
             this.btn_privacy = new SpinButton();
             this.btn_default = new SpinButton();
             this.spinButton2 = new SpinButton();
+            this.check_edgedesk = new SpinCheckBox();
             this.SSCDeploy_SpinForm.SuspendLayout();
             this.spinHorizontalTabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -238,6 +239,7 @@
             this.actions_groupbox.BackColor = System.Drawing.Color.Transparent;
             this.actions_groupbox.BaseColor = System.Drawing.Color.Transparent;
             this.actions_groupbox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(151)))), ((int)(((byte)(222)))));
+            this.actions_groupbox.Controls.Add(this.check_edgedesk);
             this.actions_groupbox.Controls.Add(this.check_SelectUSB);
             this.actions_groupbox.Controls.Add(this.check_Sleep);
             this.actions_groupbox.Controls.Add(this.check_region);
@@ -349,7 +351,7 @@
             this.check_Adobe.Cursor = System.Windows.Forms.Cursors.Hand;
             this.check_Adobe.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.check_Adobe.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
-            this.check_Adobe.Location = new System.Drawing.Point(304, 191);
+            this.check_Adobe.Location = new System.Drawing.Point(304, 223);
             this.check_Adobe.Name = "check_Adobe";
             this.check_Adobe.Size = new System.Drawing.Size(120, 17);
             this.check_Adobe.TabIndex = 22;
@@ -702,6 +704,25 @@
             this.spinButton2.Size = new System.Drawing.Size(0, 0);
             this.spinButton2.TabIndex = 4;
             // 
+            // check_edgedesk
+            // 
+            this.check_edgedesk.BackColor = System.Drawing.Color.Transparent;
+            this.check_edgedesk.CheckBackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(151)))), ((int)(((byte)(222)))));
+            this.check_edgedesk.CheckBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(71)))), ((int)(((byte)(114)))));
+            this.check_edgedesk.CheckColor = System.Drawing.Color.White;
+            this.check_edgedesk.Checked = true;
+            this.check_edgedesk.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.check_edgedesk.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.check_edgedesk.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
+            this.check_edgedesk.Location = new System.Drawing.Point(304, 191);
+            this.check_edgedesk.Name = "check_edgedesk";
+            this.check_edgedesk.Size = new System.Drawing.Size(120, 17);
+            this.check_edgedesk.TabIndex = 24;
+            this.check_edgedesk.Text = "Sup. Edge bureau";
+            this.check_edgedesk.UnCheckBackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
+            this.check_edgedesk.UnCheckBorderColor = System.Drawing.Color.Black;
+            this.check_edgedesk.UnCheckColor = System.Drawing.Color.Gray;
+            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -761,6 +782,7 @@
         private SpinGroupBox actions_groupbox;
         private SpinGroupBox spinGroupBox2;
         private SpinGroupBox spinGroupBox3;
+        private SpinCheckBox check_edgedesk;
     }
 }
 
