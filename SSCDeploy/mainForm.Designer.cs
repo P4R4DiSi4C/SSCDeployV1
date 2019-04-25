@@ -475,7 +475,7 @@
             this.check_Firefox.Name = "check_Firefox";
             this.check_Firefox.Size = new System.Drawing.Size(120, 17);
             this.check_Firefox.TabIndex = 18;
-            this.check_Firefox.Text = "Profil Firefox";
+            this.check_Firefox.Text = "Config Firefox";
             this.check_Firefox.UnCheckBackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
             this.check_Firefox.UnCheckBorderColor = System.Drawing.Color.Black;
             this.check_Firefox.UnCheckColor = System.Drawing.Color.Gray;

@@ -8,27 +8,18 @@ namespace SSCDeploy.Actions
 {
     public class Firefox
     {
-        private static string[] mozillaPaths = { Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Mozilla", "Firefox"};
-        private static DirectoryInfo mozillaDir = new DirectoryInfo(Path.Combine(mozillaPaths));
+        //        private static string[] mozillaPaths = { Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Mozilla", "Firefox"};
+        //private static DirectoryInfo mozillaDir = new DirectoryInfo(Path.Combine(mozillaPaths));
+        private static string JS_PATH = (Environment.GetFolderPath(Environment.SpecialFolder.ProgramFilesX86)).ToString() + @"\Mozilla Firefox\defaults\pref\all-epflssc.js";
+        private static string CFG_PATH = (Environment.GetFolderPath(Environment.SpecialFolder.ProgramFilesX86)).ToString() + @"\Mozilla Firefox\firefoxssc.cfg";
 
-        private static void DeleteProfiles()
+
+        private static void CopyConfigFiles()
         {
-            foreach (DirectoryInfo dir in mozillaDir.GetDirectories())
-            {
-                dir.Delete(true);
-            }
-
-            foreach (FileInfo file in mozillaDir.GetFiles())
-            {
-                file.Delete();
-            }
+            File.Copy("Files\\all-epflssc.js", JS_PATH, true);
+            File.Copy("Files\\firefoxssc.cfg", CFG_PATH, true);
         }
         
-        private static void ExtractProfile()
-        {
-            ZipFile.ExtractToDirectory("Files\\FirefoxProfile.zip", mozillaDir.FullName);
-        }
-
         public static void Profilize()
         {
             try
@@ -38,36 +29,13 @@ namespace SSCDeploy.Actions
                     process.Kill();
                 }
 
-                if (!Directory.Exists(mozillaDir.FullName))
-                {
-                    try
-                    {
-                        DirectoryInfo di = Directory.CreateDirectory(mozillaDir.FullName);
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("Erreur lors de la création du dossier Mozilla: " + ex.ToString());
-                    }
-                }
-                else
-                {
-                    try
-                    {
-                        DeleteProfiles();
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("La suppression du profil Firefox existant s'est mal déroulée: " + ex.ToString());
-                    }
-                }
-
                 try
                 {
-                    ExtractProfile();
+                    CopyConfigFiles();
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("L'extraction du profil Firefox s'est mal déroulée: " + ex.ToString());
+                    MessageBox.Show("La copie des fichiers de configuration s'est mal déroulée: " + ex.ToString());
                 }
             }
             catch (Exception ex)

@@ -66,7 +66,7 @@ namespace SSCDeploy
             if (check_Firefox.Checked)
             {
                 tasks_counter++;
-                progress.Report(new DeployProgressReport { CurrentProgressAmount = tasks_counter * 100 / max_steps, CurrentProgressMessage = "Mise en place du profil Firefox..." });
+                progress.Report(new DeployProgressReport { CurrentProgressAmount = tasks_counter * 100 / max_steps, CurrentProgressMessage = "Mise en place de la config Firefox..." });
                 Firefox.Profilize();
             }
 
