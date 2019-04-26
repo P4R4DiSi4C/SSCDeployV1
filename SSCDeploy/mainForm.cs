@@ -24,7 +24,7 @@ namespace SSCDeploy
         /// <param name="progress">Objet pour le suivi du progrès</param>
         private void Deploy(IProgress<DeployProgressReport> progress)
         {
-            int max_steps = actions_groupbox.Controls.OfType<SpinCheckBox>().Count(c => c.Checked);
+            int max_steps = actions_groupbox.Controls.OfType<SpinCheckBox>().Count(c => c.Checked) + 1;
             int tasks_counter = 0;
 
             
@@ -132,6 +132,7 @@ namespace SSCDeploy
 
             // Do something after all calculations
             text_deploy_progress.Text += "Déploiement terminé";
+            deploy_progressbar.Value = 100;
         }
 
         private void btn_privacy_Click(object sender, EventArgs e)
