@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Linq;
+using System.Reflection;
 
 namespace SSCDeploy
 {
@@ -16,6 +17,7 @@ namespace SSCDeploy
         public mainForm()
         {
             InitializeComponent();
+            lab_version.Text = "V" + Assembly.GetExecutingAssembly().GetName().Version.ToString(2);
         }
 
         /// <summary>
@@ -27,7 +29,13 @@ namespace SSCDeploy
             int max_steps = actions_groupbox.Controls.OfType<SpinCheckBox>().Count(c => c.Checked) + 1;
             int tasks_counter = 0;
 
-            
+            if (check_firefox.Checked)
+            {
+                tasks_counter++;
+                progress.Report(new DeployProgressReport { CurrentProgressAmount = tasks_counter * 100 / max_steps, CurrentProgressMessage = "Mise en place de la config Firefox..." });
+                Firefox.Profilize();
+            }
+
             if (check_select_usb.Checked)
             {
                 tasks_counter++;
@@ -61,13 +69,6 @@ namespace SSCDeploy
                 tasks_counter++;
                 progress.Report(new DeployProgressReport { CurrentProgressAmount = tasks_counter * 100 / max_steps, CurrentProgressMessage = "Épinglage des applications par défaut..." });
                 Docking.Pin();
-            }
-
-            if (check_firefox.Checked)
-            {
-                tasks_counter++;
-                progress.Report(new DeployProgressReport { CurrentProgressAmount = tasks_counter * 100 / max_steps, CurrentProgressMessage = "Mise en place de la config Firefox..." });
-                Firefox.Profilize();
             }
 
             if (check_nic_sleep.Checked)

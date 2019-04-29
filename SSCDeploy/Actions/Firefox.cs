@@ -55,24 +55,26 @@ namespace SSCDeploy.Actions
         {
             using (Process firefox_p = new Process())
             {
-                // You can start any process, HelloWorld is a do-nothing example.
                 firefox_p.StartInfo.FileName = "firefox.exe";
                 firefox_p.Start();
-                System.Threading.Thread.Sleep(10000);
+                System.Threading.Thread.Sleep(8000);
                 firefox_p.CloseMainWindow();
             };
         }
 
         private static void ClearProfiles()
         {
-            foreach (FileInfo file in mozillaDir.GetFiles())
+            if (mozillaDir.Exists)
             {
-                file.Delete();
-            }
+                foreach (FileInfo file in mozillaDir.GetFiles())
+                {
+                    file.Delete();
+                }
 
-            foreach (DirectoryInfo dir in mozillaDir.GetDirectories())
-            {
-                dir.Delete(true);
+                foreach (DirectoryInfo dir in mozillaDir.GetDirectories())
+                {
+                    dir.Delete(true);
+                }
             }
         }
         
