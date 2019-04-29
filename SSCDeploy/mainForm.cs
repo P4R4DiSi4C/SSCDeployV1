@@ -9,7 +9,7 @@ namespace SSCDeploy
 {
     public partial class mainForm : Form
     {
-        private bool formLoaded;
+        private bool form_loaded;
         private bool ignore_radio_custom;
         private bool ignore_check;
 
@@ -28,21 +28,21 @@ namespace SSCDeploy
             int tasks_counter = 0;
 
             
-            if (check_SelectUSB.Checked)
+            if (check_select_usb.Checked)
             {
                 tasks_counter++;
                 progress.Report(new DeployProgressReport { CurrentProgressAmount = tasks_counter * 100 / max_steps, CurrentProgressMessage = "Désactivation suspension sélective USB..." });
                 SelectiveUSB.Disable();
             }
 
-            if (check_Sleep.Checked)
+            if (check_sleep.Checked)
             {
                 tasks_counter++;
                 progress.Report(new DeployProgressReport { CurrentProgressAmount = tasks_counter * 100 / max_steps, CurrentProgressMessage = "Désactivation mise en veille sous secteur..." });
                 Sleep.Disable();
             }
 
-            if (check_IPV6.Checked)
+            if (check_ipv6.Checked)
             {
                 tasks_counter++;
                 progress.Report(new DeployProgressReport { CurrentProgressAmount = tasks_counter * 100 / max_steps, CurrentProgressMessage = "Désactivation de l'IPV6..." });
@@ -63,28 +63,28 @@ namespace SSCDeploy
                 Docking.Pin();
             }
 
-            if (check_Firefox.Checked)
+            if (check_firefox.Checked)
             {
                 tasks_counter++;
                 progress.Report(new DeployProgressReport { CurrentProgressAmount = tasks_counter * 100 / max_steps, CurrentProgressMessage = "Mise en place de la config Firefox..." });
                 Firefox.Profilize();
             }
 
-            if (check_NICSleep.Checked)
+            if (check_nic_sleep.Checked)
             {
                 tasks_counter++;
                 progress.Report(new DeployProgressReport { CurrentProgressAmount = tasks_counter * 100 / max_steps, CurrentProgressMessage = "Désactivation mise en veille cartes réseau..." });
                 NICPowerSave.Disable();
             }
 
-            if (check_USBSleep.Checked)
+            if (check_usb_sleep.Checked)
             {
                 tasks_counter++;
                 progress.Report(new DeployProgressReport { CurrentProgressAmount = tasks_counter * 100 / max_steps, CurrentProgressMessage = "Désactivation mise en veille USB..." });
                 USBPowerSave.Disable();
             }
 
-            if (check_OneDrive.Checked)
+            if (check_onedrive.Checked)
             {
                 tasks_counter++;
                 progress.Report(new DeployProgressReport { CurrentProgressAmount = tasks_counter * 100 / max_steps, CurrentProgressMessage = "Désinstallation de Onedrive..." });
@@ -99,14 +99,14 @@ namespace SSCDeploy
                 Regional.Set_Decimal_Separator();
             }
 
-            if(check_edgedesk.Checked)
+            if(check_edge_desk.Checked)
             {
                 tasks_counter++;
                 progress.Report(new DeployProgressReport { CurrentProgressAmount = tasks_counter * 100 / max_steps, CurrentProgressMessage = "Supression îcone Edge du bureau..." });
                 Desktop.Delete_Edge_Icon();
             }
 
-            if (check_Adobe.Checked)
+            if (check_adobe.Checked)
             {
                 tasks_counter++;
                 progress.Report(new DeployProgressReport { CurrentProgressAmount = tasks_counter * 100 / max_steps, CurrentProgressMessage = "Adobe par défaut S.V.P..." });
@@ -127,42 +127,61 @@ namespace SSCDeploy
                 text_deploy_progress.Text += progress.CurrentProgressMessage + "\n";
             });
 
-            // Run operation in another thread
+            // Fait tourner l'opération sur un autre thread
             await Task.Run(() => Deploy(progress_report));
 
-            // Do something after all calculations
+            // Défini les valeurs finales à la fin de toutes les étapes
             text_deploy_progress.Text += "Déploiement terminé";
             deploy_progressbar.Value = 100;
         }
 
+        /// <summary>
+        /// Ouvre les options de confidentialité Windows 10
+        /// </summary>
         private void btn_privacy_Click(object sender, EventArgs e)
         {
             Process.Start("ms-settings:privacy-general");
         }
 
+        /// <summary>
+        /// Ouvre les options d'applications par défaut Windows 10
+        /// </summary>
         private void btn_default_Click(object sender, EventArgs e)
         {
             Process.Start("ms-settings:defaultapps");
         }
 
+        /// <summary>
+        /// Ouvre IE
+        /// </summary>
         private void btn_ie_Click(object sender, EventArgs e)
         {
             Process.Start("iexplore");
         }
 
+        /// <summary>
+        /// Bouton pour quitter l'application
+        /// </summary>
         private void exit_btn_Click(object sender, EventArgs e)
         {
            Application.Exit();
         }
 
+        /// <summary>
+        /// Bouton pour redémarrer le poste
+        /// </summary>
         private void btn_Restart_Click(object sender, EventArgs e)
         {
             Process.Start("shutdown.exe", "-r -t 00");
         }
 
+        /// <summary>
+        /// Événement lorsque l'un des radios boutons change d'état
+        /// </summary>
         private void radiobuttons_checked_changed(object sender)
         {
-            if (formLoaded)
+            // Uniquement si l'application a déjà charger
+            if (form_loaded)
             {
                 ignore_check = true;
                 SpinRadioButton clicked_radio = (SpinRadioButton)sender;
@@ -193,7 +212,7 @@ namespace SSCDeploy
                         action_checkbox.Checked = true;
                     }
 
-                    check_Firefox.Checked = false;
+                    check_firefox.Checked = false;
                     check_unpin.Checked = false;
                     check_pin.Checked = false;
                 }
@@ -209,9 +228,13 @@ namespace SSCDeploy
             }
         }
 
+        /// <summary>
+        /// Événement lorsque l'un des checks boutons change d'état
+        /// </summary>
         private void checkbox_actions_checked_changed(object sender)
         {
-            if (formLoaded && !ignore_check)
+            // Uniquement lorsque l'application est chargée
+            if (form_loaded && !ignore_check)
             {
                 if (actions_groupbox.Controls.OfType<SpinCheckBox>().Count() == actions_groupbox.Controls.OfType<SpinCheckBox>().Count(c => c.Checked))
                 {
@@ -225,10 +248,12 @@ namespace SSCDeploy
                 }
             }
         }
-
+        /// <summary>
+        /// Événement lorsque l'application a fini de charger
+        /// </summary>
         private void mainForm_Shown(object sender, EventArgs e)
         {
-            formLoaded = true;
+            form_loaded = true;
         }
     }
 }

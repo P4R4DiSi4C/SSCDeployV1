@@ -2881,3 +2881,13 @@
   </body>
 </html>
 
+
+\.vs/SSCDeploy/v15/
+
+SSCDeploy/bin/Debug/
+
+SSCDeploy/bin/Release/
+
+SSCDeploy/obj/Debug/
+
+SSCDeploy/obj/Release/

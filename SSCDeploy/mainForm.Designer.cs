@@ -38,22 +38,22 @@
             this.radio_new = new SpinRadioButton();
             this.radio_update = new SpinRadioButton();
             this.actions_groupbox = new SpinGroupBox();
-            this.check_edgedesk = new SpinCheckBox();
-            this.check_SelectUSB = new SpinCheckBox();
-            this.check_Sleep = new SpinCheckBox();
+            this.check_edge_desk = new SpinCheckBox();
+            this.check_select_usb = new SpinCheckBox();
+            this.check_sleep = new SpinCheckBox();
             this.check_region = new SpinCheckBox();
-            this.check_IPV6 = new SpinCheckBox();
-            this.check_Adobe = new SpinCheckBox();
+            this.check_ipv6 = new SpinCheckBox();
+            this.check_adobe = new SpinCheckBox();
             this.check_unpin = new SpinCheckBox();
-            this.check_OneDrive = new SpinCheckBox();
+            this.check_onedrive = new SpinCheckBox();
             this.check_pin = new SpinCheckBox();
-            this.check_USBSleep = new SpinCheckBox();
-            this.check_Firefox = new SpinCheckBox();
-            this.check_NICSleep = new SpinCheckBox();
+            this.check_usb_sleep = new SpinCheckBox();
+            this.check_firefox = new SpinCheckBox();
+            this.check_nic_sleep = new SpinCheckBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.spinGroupBox2 = new SpinGroupBox();
-            this.spinButton1 = new SpinTheme.SpinButton();
-            this.btn_Restart = new SpinButton();
+            this.btn_deploy = new SpinTheme.SpinButton();
+            this.btn_restart = new SpinButton();
             this.text_deploy_progress = new SpinTheme.SpinRichTextbox();
             this.deploy_progressbar = new SpinTheme.SpinCircleProgressBar();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -239,18 +239,18 @@
             this.actions_groupbox.BackColor = System.Drawing.Color.Transparent;
             this.actions_groupbox.BaseColor = System.Drawing.Color.Transparent;
             this.actions_groupbox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(151)))), ((int)(((byte)(222)))));
-            this.actions_groupbox.Controls.Add(this.check_edgedesk);
-            this.actions_groupbox.Controls.Add(this.check_SelectUSB);
-            this.actions_groupbox.Controls.Add(this.check_Sleep);
+            this.actions_groupbox.Controls.Add(this.check_edge_desk);
+            this.actions_groupbox.Controls.Add(this.check_select_usb);
+            this.actions_groupbox.Controls.Add(this.check_sleep);
             this.actions_groupbox.Controls.Add(this.check_region);
-            this.actions_groupbox.Controls.Add(this.check_IPV6);
-            this.actions_groupbox.Controls.Add(this.check_Adobe);
+            this.actions_groupbox.Controls.Add(this.check_ipv6);
+            this.actions_groupbox.Controls.Add(this.check_adobe);
             this.actions_groupbox.Controls.Add(this.check_unpin);
-            this.actions_groupbox.Controls.Add(this.check_OneDrive);
+            this.actions_groupbox.Controls.Add(this.check_onedrive);
             this.actions_groupbox.Controls.Add(this.check_pin);
-            this.actions_groupbox.Controls.Add(this.check_USBSleep);
-            this.actions_groupbox.Controls.Add(this.check_Firefox);
-            this.actions_groupbox.Controls.Add(this.check_NICSleep);
+            this.actions_groupbox.Controls.Add(this.check_usb_sleep);
+            this.actions_groupbox.Controls.Add(this.check_firefox);
+            this.actions_groupbox.Controls.Add(this.check_nic_sleep);
             this.actions_groupbox.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.actions_groupbox.HeaderColor = System.Drawing.Color.Transparent;
             this.actions_groupbox.HeaderTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
@@ -261,65 +261,65 @@
             this.actions_groupbox.TabIndex = 30;
             this.actions_groupbox.Text = "ACTIONS À EFFECTUER";
             // 
-            // check_edgedesk
+            // check_edge_desk
             // 
-            this.check_edgedesk.BackColor = System.Drawing.Color.Transparent;
-            this.check_edgedesk.CheckBackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(151)))), ((int)(((byte)(222)))));
-            this.check_edgedesk.CheckBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(71)))), ((int)(((byte)(114)))));
-            this.check_edgedesk.CheckColor = System.Drawing.Color.White;
-            this.check_edgedesk.Checked = true;
-            this.check_edgedesk.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.check_edgedesk.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.check_edgedesk.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
-            this.check_edgedesk.Location = new System.Drawing.Point(304, 191);
-            this.check_edgedesk.Name = "check_edgedesk";
-            this.check_edgedesk.Size = new System.Drawing.Size(120, 17);
-            this.check_edgedesk.TabIndex = 24;
-            this.check_edgedesk.Text = "Sup. Edge bureau";
-            this.check_edgedesk.UnCheckBackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
-            this.check_edgedesk.UnCheckBorderColor = System.Drawing.Color.Black;
-            this.check_edgedesk.UnCheckColor = System.Drawing.Color.Gray;
-            this.check_edgedesk.CheckedChanged += new SpinCheckBox.CheckedChangedEventHandler(this.checkbox_actions_checked_changed);
+            this.check_edge_desk.BackColor = System.Drawing.Color.Transparent;
+            this.check_edge_desk.CheckBackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(151)))), ((int)(((byte)(222)))));
+            this.check_edge_desk.CheckBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(71)))), ((int)(((byte)(114)))));
+            this.check_edge_desk.CheckColor = System.Drawing.Color.White;
+            this.check_edge_desk.Checked = true;
+            this.check_edge_desk.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.check_edge_desk.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.check_edge_desk.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
+            this.check_edge_desk.Location = new System.Drawing.Point(304, 191);
+            this.check_edge_desk.Name = "check_edge_desk";
+            this.check_edge_desk.Size = new System.Drawing.Size(120, 17);
+            this.check_edge_desk.TabIndex = 24;
+            this.check_edge_desk.Text = "Sup. Edge bureau";
+            this.check_edge_desk.UnCheckBackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
+            this.check_edge_desk.UnCheckBorderColor = System.Drawing.Color.Black;
+            this.check_edge_desk.UnCheckColor = System.Drawing.Color.Gray;
+            this.check_edge_desk.CheckedChanged += new SpinCheckBox.CheckedChangedEventHandler(this.checkbox_actions_checked_changed);
             // 
-            // check_SelectUSB
+            // check_select_usb
             // 
-            this.check_SelectUSB.BackColor = System.Drawing.Color.Transparent;
-            this.check_SelectUSB.CheckBackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(151)))), ((int)(((byte)(222)))));
-            this.check_SelectUSB.CheckBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(71)))), ((int)(((byte)(114)))));
-            this.check_SelectUSB.CheckColor = System.Drawing.Color.White;
-            this.check_SelectUSB.Checked = true;
-            this.check_SelectUSB.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.check_SelectUSB.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.check_SelectUSB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
-            this.check_SelectUSB.Location = new System.Drawing.Point(16, 63);
-            this.check_SelectUSB.Name = "check_SelectUSB";
-            this.check_SelectUSB.Size = new System.Drawing.Size(184, 17);
-            this.check_SelectUSB.TabIndex = 13;
-            this.check_SelectUSB.Text = "Suspension USB sélective";
-            this.check_SelectUSB.UnCheckBackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
-            this.check_SelectUSB.UnCheckBorderColor = System.Drawing.Color.Black;
-            this.check_SelectUSB.UnCheckColor = System.Drawing.Color.Gray;
-            this.check_SelectUSB.CheckedChanged += new SpinCheckBox.CheckedChangedEventHandler(this.checkbox_actions_checked_changed);
+            this.check_select_usb.BackColor = System.Drawing.Color.Transparent;
+            this.check_select_usb.CheckBackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(151)))), ((int)(((byte)(222)))));
+            this.check_select_usb.CheckBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(71)))), ((int)(((byte)(114)))));
+            this.check_select_usb.CheckColor = System.Drawing.Color.White;
+            this.check_select_usb.Checked = true;
+            this.check_select_usb.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.check_select_usb.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.check_select_usb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
+            this.check_select_usb.Location = new System.Drawing.Point(16, 63);
+            this.check_select_usb.Name = "check_select_usb";
+            this.check_select_usb.Size = new System.Drawing.Size(184, 17);
+            this.check_select_usb.TabIndex = 13;
+            this.check_select_usb.Text = "Suspension USB sélective";
+            this.check_select_usb.UnCheckBackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
+            this.check_select_usb.UnCheckBorderColor = System.Drawing.Color.Black;
+            this.check_select_usb.UnCheckColor = System.Drawing.Color.Gray;
+            this.check_select_usb.CheckedChanged += new SpinCheckBox.CheckedChangedEventHandler(this.checkbox_actions_checked_changed);
             // 
-            // check_Sleep
+            // check_sleep
             // 
-            this.check_Sleep.BackColor = System.Drawing.Color.Transparent;
-            this.check_Sleep.CheckBackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(151)))), ((int)(((byte)(222)))));
-            this.check_Sleep.CheckBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(71)))), ((int)(((byte)(114)))));
-            this.check_Sleep.CheckColor = System.Drawing.Color.White;
-            this.check_Sleep.Checked = true;
-            this.check_Sleep.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.check_Sleep.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.check_Sleep.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
-            this.check_Sleep.Location = new System.Drawing.Point(16, 95);
-            this.check_Sleep.Name = "check_Sleep";
-            this.check_Sleep.Size = new System.Drawing.Size(194, 17);
-            this.check_Sleep.TabIndex = 14;
-            this.check_Sleep.Text = "Mise en veille sous sécteur";
-            this.check_Sleep.UnCheckBackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
-            this.check_Sleep.UnCheckBorderColor = System.Drawing.Color.Black;
-            this.check_Sleep.UnCheckColor = System.Drawing.Color.Gray;
-            this.check_Sleep.CheckedChanged += new SpinCheckBox.CheckedChangedEventHandler(this.checkbox_actions_checked_changed);
+            this.check_sleep.BackColor = System.Drawing.Color.Transparent;
+            this.check_sleep.CheckBackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(151)))), ((int)(((byte)(222)))));
+            this.check_sleep.CheckBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(71)))), ((int)(((byte)(114)))));
+            this.check_sleep.CheckColor = System.Drawing.Color.White;
+            this.check_sleep.Checked = true;
+            this.check_sleep.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.check_sleep.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.check_sleep.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
+            this.check_sleep.Location = new System.Drawing.Point(16, 95);
+            this.check_sleep.Name = "check_sleep";
+            this.check_sleep.Size = new System.Drawing.Size(194, 17);
+            this.check_sleep.TabIndex = 14;
+            this.check_sleep.Text = "Mise en veille sous sécteur";
+            this.check_sleep.UnCheckBackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
+            this.check_sleep.UnCheckBorderColor = System.Drawing.Color.Black;
+            this.check_sleep.UnCheckColor = System.Drawing.Color.Gray;
+            this.check_sleep.CheckedChanged += new SpinCheckBox.CheckedChangedEventHandler(this.checkbox_actions_checked_changed);
             // 
             // check_region
             // 
@@ -341,45 +341,45 @@
             this.check_region.UnCheckColor = System.Drawing.Color.Gray;
             this.check_region.CheckedChanged += new SpinCheckBox.CheckedChangedEventHandler(this.checkbox_actions_checked_changed);
             // 
-            // check_IPV6
+            // check_ipv6
             // 
-            this.check_IPV6.BackColor = System.Drawing.Color.Transparent;
-            this.check_IPV6.CheckBackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(151)))), ((int)(((byte)(222)))));
-            this.check_IPV6.CheckBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(71)))), ((int)(((byte)(114)))));
-            this.check_IPV6.CheckColor = System.Drawing.Color.White;
-            this.check_IPV6.Checked = true;
-            this.check_IPV6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.check_IPV6.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.check_IPV6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
-            this.check_IPV6.Location = new System.Drawing.Point(16, 127);
-            this.check_IPV6.Name = "check_IPV6";
-            this.check_IPV6.Size = new System.Drawing.Size(159, 17);
-            this.check_IPV6.TabIndex = 15;
-            this.check_IPV6.Text = "IPV6";
-            this.check_IPV6.UnCheckBackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
-            this.check_IPV6.UnCheckBorderColor = System.Drawing.Color.Black;
-            this.check_IPV6.UnCheckColor = System.Drawing.Color.Gray;
-            this.check_IPV6.CheckedChanged += new SpinCheckBox.CheckedChangedEventHandler(this.checkbox_actions_checked_changed);
+            this.check_ipv6.BackColor = System.Drawing.Color.Transparent;
+            this.check_ipv6.CheckBackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(151)))), ((int)(((byte)(222)))));
+            this.check_ipv6.CheckBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(71)))), ((int)(((byte)(114)))));
+            this.check_ipv6.CheckColor = System.Drawing.Color.White;
+            this.check_ipv6.Checked = true;
+            this.check_ipv6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.check_ipv6.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.check_ipv6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
+            this.check_ipv6.Location = new System.Drawing.Point(16, 127);
+            this.check_ipv6.Name = "check_ipv6";
+            this.check_ipv6.Size = new System.Drawing.Size(159, 17);
+            this.check_ipv6.TabIndex = 15;
+            this.check_ipv6.Text = "IPV6";
+            this.check_ipv6.UnCheckBackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
+            this.check_ipv6.UnCheckBorderColor = System.Drawing.Color.Black;
+            this.check_ipv6.UnCheckColor = System.Drawing.Color.Gray;
+            this.check_ipv6.CheckedChanged += new SpinCheckBox.CheckedChangedEventHandler(this.checkbox_actions_checked_changed);
             // 
-            // check_Adobe
+            // check_adobe
             // 
-            this.check_Adobe.BackColor = System.Drawing.Color.Transparent;
-            this.check_Adobe.CheckBackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(151)))), ((int)(((byte)(222)))));
-            this.check_Adobe.CheckBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(71)))), ((int)(((byte)(114)))));
-            this.check_Adobe.CheckColor = System.Drawing.Color.White;
-            this.check_Adobe.Checked = true;
-            this.check_Adobe.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.check_Adobe.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.check_Adobe.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
-            this.check_Adobe.Location = new System.Drawing.Point(304, 223);
-            this.check_Adobe.Name = "check_Adobe";
-            this.check_Adobe.Size = new System.Drawing.Size(120, 17);
-            this.check_Adobe.TabIndex = 22;
-            this.check_Adobe.Text = "Adobe par défaut";
-            this.check_Adobe.UnCheckBackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
-            this.check_Adobe.UnCheckBorderColor = System.Drawing.Color.Black;
-            this.check_Adobe.UnCheckColor = System.Drawing.Color.Gray;
-            this.check_Adobe.CheckedChanged += new SpinCheckBox.CheckedChangedEventHandler(this.checkbox_actions_checked_changed);
+            this.check_adobe.BackColor = System.Drawing.Color.Transparent;
+            this.check_adobe.CheckBackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(151)))), ((int)(((byte)(222)))));
+            this.check_adobe.CheckBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(71)))), ((int)(((byte)(114)))));
+            this.check_adobe.CheckColor = System.Drawing.Color.White;
+            this.check_adobe.Checked = true;
+            this.check_adobe.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.check_adobe.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.check_adobe.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
+            this.check_adobe.Location = new System.Drawing.Point(304, 223);
+            this.check_adobe.Name = "check_adobe";
+            this.check_adobe.Size = new System.Drawing.Size(120, 17);
+            this.check_adobe.TabIndex = 22;
+            this.check_adobe.Text = "Adobe par défaut";
+            this.check_adobe.UnCheckBackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
+            this.check_adobe.UnCheckBorderColor = System.Drawing.Color.Black;
+            this.check_adobe.UnCheckColor = System.Drawing.Color.Gray;
+            this.check_adobe.CheckedChanged += new SpinCheckBox.CheckedChangedEventHandler(this.checkbox_actions_checked_changed);
             // 
             // check_unpin
             // 
@@ -401,25 +401,25 @@
             this.check_unpin.UnCheckColor = System.Drawing.Color.Gray;
             this.check_unpin.CheckedChanged += new SpinCheckBox.CheckedChangedEventHandler(this.checkbox_actions_checked_changed);
             // 
-            // check_OneDrive
+            // check_onedrive
             // 
-            this.check_OneDrive.BackColor = System.Drawing.Color.Transparent;
-            this.check_OneDrive.CheckBackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(151)))), ((int)(((byte)(222)))));
-            this.check_OneDrive.CheckBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(71)))), ((int)(((byte)(114)))));
-            this.check_OneDrive.CheckColor = System.Drawing.Color.White;
-            this.check_OneDrive.Checked = true;
-            this.check_OneDrive.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.check_OneDrive.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.check_OneDrive.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
-            this.check_OneDrive.Location = new System.Drawing.Point(304, 158);
-            this.check_OneDrive.Name = "check_OneDrive";
-            this.check_OneDrive.Size = new System.Drawing.Size(120, 17);
-            this.check_OneDrive.TabIndex = 21;
-            this.check_OneDrive.Text = "Onedrive";
-            this.check_OneDrive.UnCheckBackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
-            this.check_OneDrive.UnCheckBorderColor = System.Drawing.Color.Black;
-            this.check_OneDrive.UnCheckColor = System.Drawing.Color.Gray;
-            this.check_OneDrive.CheckedChanged += new SpinCheckBox.CheckedChangedEventHandler(this.checkbox_actions_checked_changed);
+            this.check_onedrive.BackColor = System.Drawing.Color.Transparent;
+            this.check_onedrive.CheckBackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(151)))), ((int)(((byte)(222)))));
+            this.check_onedrive.CheckBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(71)))), ((int)(((byte)(114)))));
+            this.check_onedrive.CheckColor = System.Drawing.Color.White;
+            this.check_onedrive.Checked = true;
+            this.check_onedrive.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.check_onedrive.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.check_onedrive.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
+            this.check_onedrive.Location = new System.Drawing.Point(304, 158);
+            this.check_onedrive.Name = "check_onedrive";
+            this.check_onedrive.Size = new System.Drawing.Size(120, 17);
+            this.check_onedrive.TabIndex = 21;
+            this.check_onedrive.Text = "Onedrive";
+            this.check_onedrive.UnCheckBackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
+            this.check_onedrive.UnCheckBorderColor = System.Drawing.Color.Black;
+            this.check_onedrive.UnCheckColor = System.Drawing.Color.Gray;
+            this.check_onedrive.CheckedChanged += new SpinCheckBox.CheckedChangedEventHandler(this.checkbox_actions_checked_changed);
             // 
             // check_pin
             // 
@@ -441,65 +441,65 @@
             this.check_pin.UnCheckColor = System.Drawing.Color.Gray;
             this.check_pin.CheckedChanged += new SpinCheckBox.CheckedChangedEventHandler(this.checkbox_actions_checked_changed);
             // 
-            // check_USBSleep
+            // check_usb_sleep
             // 
-            this.check_USBSleep.BackColor = System.Drawing.Color.Transparent;
-            this.check_USBSleep.CheckBackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(151)))), ((int)(((byte)(222)))));
-            this.check_USBSleep.CheckBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(71)))), ((int)(((byte)(114)))));
-            this.check_USBSleep.CheckColor = System.Drawing.Color.White;
-            this.check_USBSleep.Checked = true;
-            this.check_USBSleep.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.check_USBSleep.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.check_USBSleep.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
-            this.check_USBSleep.Location = new System.Drawing.Point(304, 127);
-            this.check_USBSleep.Name = "check_USBSleep";
-            this.check_USBSleep.Size = new System.Drawing.Size(120, 17);
-            this.check_USBSleep.TabIndex = 20;
-            this.check_USBSleep.Text = "Mise en veille USB";
-            this.check_USBSleep.UnCheckBackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
-            this.check_USBSleep.UnCheckBorderColor = System.Drawing.Color.Black;
-            this.check_USBSleep.UnCheckColor = System.Drawing.Color.Gray;
-            this.check_USBSleep.CheckedChanged += new SpinCheckBox.CheckedChangedEventHandler(this.checkbox_actions_checked_changed);
+            this.check_usb_sleep.BackColor = System.Drawing.Color.Transparent;
+            this.check_usb_sleep.CheckBackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(151)))), ((int)(((byte)(222)))));
+            this.check_usb_sleep.CheckBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(71)))), ((int)(((byte)(114)))));
+            this.check_usb_sleep.CheckColor = System.Drawing.Color.White;
+            this.check_usb_sleep.Checked = true;
+            this.check_usb_sleep.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.check_usb_sleep.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.check_usb_sleep.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
+            this.check_usb_sleep.Location = new System.Drawing.Point(304, 127);
+            this.check_usb_sleep.Name = "check_usb_sleep";
+            this.check_usb_sleep.Size = new System.Drawing.Size(120, 17);
+            this.check_usb_sleep.TabIndex = 20;
+            this.check_usb_sleep.Text = "Mise en veille USB";
+            this.check_usb_sleep.UnCheckBackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
+            this.check_usb_sleep.UnCheckBorderColor = System.Drawing.Color.Black;
+            this.check_usb_sleep.UnCheckColor = System.Drawing.Color.Gray;
+            this.check_usb_sleep.CheckedChanged += new SpinCheckBox.CheckedChangedEventHandler(this.checkbox_actions_checked_changed);
             // 
-            // check_Firefox
+            // check_firefox
             // 
-            this.check_Firefox.BackColor = System.Drawing.Color.Transparent;
-            this.check_Firefox.CheckBackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(151)))), ((int)(((byte)(222)))));
-            this.check_Firefox.CheckBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(71)))), ((int)(((byte)(114)))));
-            this.check_Firefox.CheckColor = System.Drawing.Color.White;
-            this.check_Firefox.Checked = true;
-            this.check_Firefox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.check_Firefox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.check_Firefox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
-            this.check_Firefox.Location = new System.Drawing.Point(304, 63);
-            this.check_Firefox.Name = "check_Firefox";
-            this.check_Firefox.Size = new System.Drawing.Size(120, 17);
-            this.check_Firefox.TabIndex = 18;
-            this.check_Firefox.Text = "Config Firefox";
-            this.check_Firefox.UnCheckBackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
-            this.check_Firefox.UnCheckBorderColor = System.Drawing.Color.Black;
-            this.check_Firefox.UnCheckColor = System.Drawing.Color.Gray;
-            this.check_Firefox.CheckedChanged += new SpinCheckBox.CheckedChangedEventHandler(this.checkbox_actions_checked_changed);
+            this.check_firefox.BackColor = System.Drawing.Color.Transparent;
+            this.check_firefox.CheckBackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(151)))), ((int)(((byte)(222)))));
+            this.check_firefox.CheckBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(71)))), ((int)(((byte)(114)))));
+            this.check_firefox.CheckColor = System.Drawing.Color.White;
+            this.check_firefox.Checked = true;
+            this.check_firefox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.check_firefox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.check_firefox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
+            this.check_firefox.Location = new System.Drawing.Point(304, 63);
+            this.check_firefox.Name = "check_firefox";
+            this.check_firefox.Size = new System.Drawing.Size(120, 17);
+            this.check_firefox.TabIndex = 18;
+            this.check_firefox.Text = "Config Firefox";
+            this.check_firefox.UnCheckBackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
+            this.check_firefox.UnCheckBorderColor = System.Drawing.Color.Black;
+            this.check_firefox.UnCheckColor = System.Drawing.Color.Gray;
+            this.check_firefox.CheckedChanged += new SpinCheckBox.CheckedChangedEventHandler(this.checkbox_actions_checked_changed);
             // 
-            // check_NICSleep
+            // check_nic_sleep
             // 
-            this.check_NICSleep.BackColor = System.Drawing.Color.Transparent;
-            this.check_NICSleep.CheckBackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(151)))), ((int)(((byte)(222)))));
-            this.check_NICSleep.CheckBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(71)))), ((int)(((byte)(114)))));
-            this.check_NICSleep.CheckColor = System.Drawing.Color.White;
-            this.check_NICSleep.Checked = true;
-            this.check_NICSleep.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.check_NICSleep.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.check_NICSleep.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
-            this.check_NICSleep.Location = new System.Drawing.Point(304, 95);
-            this.check_NICSleep.Name = "check_NICSleep";
-            this.check_NICSleep.Size = new System.Drawing.Size(120, 17);
-            this.check_NICSleep.TabIndex = 19;
-            this.check_NICSleep.Text = "Mise en veille NIC";
-            this.check_NICSleep.UnCheckBackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
-            this.check_NICSleep.UnCheckBorderColor = System.Drawing.Color.Black;
-            this.check_NICSleep.UnCheckColor = System.Drawing.Color.Gray;
-            this.check_NICSleep.CheckedChanged += new SpinCheckBox.CheckedChangedEventHandler(this.checkbox_actions_checked_changed);
+            this.check_nic_sleep.BackColor = System.Drawing.Color.Transparent;
+            this.check_nic_sleep.CheckBackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(151)))), ((int)(((byte)(222)))));
+            this.check_nic_sleep.CheckBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(71)))), ((int)(((byte)(114)))));
+            this.check_nic_sleep.CheckColor = System.Drawing.Color.White;
+            this.check_nic_sleep.Checked = true;
+            this.check_nic_sleep.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.check_nic_sleep.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.check_nic_sleep.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
+            this.check_nic_sleep.Location = new System.Drawing.Point(304, 95);
+            this.check_nic_sleep.Name = "check_nic_sleep";
+            this.check_nic_sleep.Size = new System.Drawing.Size(120, 17);
+            this.check_nic_sleep.TabIndex = 19;
+            this.check_nic_sleep.Text = "Mise en veille NIC";
+            this.check_nic_sleep.UnCheckBackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
+            this.check_nic_sleep.UnCheckBorderColor = System.Drawing.Color.Black;
+            this.check_nic_sleep.UnCheckColor = System.Drawing.Color.Gray;
+            this.check_nic_sleep.CheckedChanged += new SpinCheckBox.CheckedChangedEventHandler(this.checkbox_actions_checked_changed);
             // 
             // tabPage1
             // 
@@ -517,8 +517,8 @@
             this.spinGroupBox2.BackColor = System.Drawing.Color.Transparent;
             this.spinGroupBox2.BaseColor = System.Drawing.Color.Transparent;
             this.spinGroupBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(151)))), ((int)(((byte)(222)))));
-            this.spinGroupBox2.Controls.Add(this.spinButton1);
-            this.spinGroupBox2.Controls.Add(this.btn_Restart);
+            this.spinGroupBox2.Controls.Add(this.btn_deploy);
+            this.spinGroupBox2.Controls.Add(this.btn_restart);
             this.spinGroupBox2.Controls.Add(this.text_deploy_progress);
             this.spinGroupBox2.Controls.Add(this.deploy_progressbar);
             this.spinGroupBox2.Font = new System.Drawing.Font("Segoe UI", 10F);
@@ -530,49 +530,49 @@
             this.spinGroupBox2.TabIndex = 3;
             this.spinGroupBox2.Text = "DÉPLOIEMENT";
             // 
-            // spinButton1
+            // btn_deploy
             // 
-            this.spinButton1.BackColor = System.Drawing.Color.Transparent;
-            this.spinButton1.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.spinButton1.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(174)))), ((int)(((byte)(72)))));
-            this.spinButton1.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(212)))), ((int)(((byte)(46)))));
-            this.spinButton1.HoverTextColor = System.Drawing.Color.White;
-            this.spinButton1.IsEnabled = true;
-            this.spinButton1.Location = new System.Drawing.Point(285, 242);
-            this.spinButton1.Name = "spinButton1";
-            this.spinButton1.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(144)))), ((int)(((byte)(210)))));
-            this.spinButton1.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(151)))), ((int)(((byte)(222)))));
-            this.spinButton1.NormalTextColor = System.Drawing.Color.White;
-            this.spinButton1.PushedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(174)))), ((int)(((byte)(72)))));
-            this.spinButton1.PushedColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(16)))));
-            this.spinButton1.PushedTextColor = System.Drawing.Color.White;
-            this.spinButton1.RoundRadius = 1;
-            this.spinButton1.Size = new System.Drawing.Size(143, 39);
-            this.spinButton1.TabIndex = 1;
-            this.spinButton1.Text = "DÉPLOYER";
-            this.spinButton1.Click += new System.EventHandler(this.btn_deploy_Click);
+            this.btn_deploy.BackColor = System.Drawing.Color.Transparent;
+            this.btn_deploy.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.btn_deploy.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(174)))), ((int)(((byte)(72)))));
+            this.btn_deploy.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(212)))), ((int)(((byte)(46)))));
+            this.btn_deploy.HoverTextColor = System.Drawing.Color.White;
+            this.btn_deploy.IsEnabled = true;
+            this.btn_deploy.Location = new System.Drawing.Point(285, 242);
+            this.btn_deploy.Name = "btn_deploy";
+            this.btn_deploy.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(144)))), ((int)(((byte)(210)))));
+            this.btn_deploy.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(151)))), ((int)(((byte)(222)))));
+            this.btn_deploy.NormalTextColor = System.Drawing.Color.White;
+            this.btn_deploy.PushedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(174)))), ((int)(((byte)(72)))));
+            this.btn_deploy.PushedColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(16)))));
+            this.btn_deploy.PushedTextColor = System.Drawing.Color.White;
+            this.btn_deploy.RoundRadius = 1;
+            this.btn_deploy.Size = new System.Drawing.Size(143, 39);
+            this.btn_deploy.TabIndex = 1;
+            this.btn_deploy.Text = "DÉPLOYER";
+            this.btn_deploy.Click += new System.EventHandler(this.btn_deploy_Click);
             // 
-            // btn_Restart
+            // btn_restart
             // 
-            this.btn_Restart.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Restart.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Restart.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(174)))), ((int)(((byte)(72)))));
-            this.btn_Restart.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(212)))), ((int)(((byte)(46)))));
-            this.btn_Restart.HoverTextColor = System.Drawing.Color.White;
-            this.btn_Restart.IsEnabled = true;
-            this.btn_Restart.Location = new System.Drawing.Point(285, 310);
-            this.btn_Restart.Name = "btn_Restart";
-            this.btn_Restart.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(151)))), ((int)(((byte)(222)))));
-            this.btn_Restart.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btn_Restart.NormalTextColor = System.Drawing.Color.White;
-            this.btn_Restart.PushedBorderColor = System.Drawing.Color.Silver;
-            this.btn_Restart.PushedColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btn_Restart.PushedTextColor = System.Drawing.Color.White;
-            this.btn_Restart.RoundRadius = 1;
-            this.btn_Restart.Size = new System.Drawing.Size(143, 23);
-            this.btn_Restart.TabIndex = 2;
-            this.btn_Restart.Text = "Redémarrer";
-            this.btn_Restart.Click += new System.EventHandler(this.btn_Restart_Click);
+            this.btn_restart.BackColor = System.Drawing.Color.Transparent;
+            this.btn_restart.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_restart.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(174)))), ((int)(((byte)(72)))));
+            this.btn_restart.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(212)))), ((int)(((byte)(46)))));
+            this.btn_restart.HoverTextColor = System.Drawing.Color.White;
+            this.btn_restart.IsEnabled = true;
+            this.btn_restart.Location = new System.Drawing.Point(285, 310);
+            this.btn_restart.Name = "btn_restart";
+            this.btn_restart.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(151)))), ((int)(((byte)(222)))));
+            this.btn_restart.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_restart.NormalTextColor = System.Drawing.Color.White;
+            this.btn_restart.PushedBorderColor = System.Drawing.Color.Silver;
+            this.btn_restart.PushedColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btn_restart.PushedTextColor = System.Drawing.Color.White;
+            this.btn_restart.RoundRadius = 1;
+            this.btn_restart.Size = new System.Drawing.Size(143, 23);
+            this.btn_restart.TabIndex = 2;
+            this.btn_restart.Text = "Redémarrer";
+            this.btn_restart.Click += new System.EventHandler(this.btn_Restart_Click);
             // 
             // text_deploy_progress
             // 
@@ -754,7 +754,7 @@
         private SpinTheme.SpinForm SSCDeploy_SpinForm;
         private SpinTheme.SpinCircleProgressBar deploy_progressbar;
         private SpinTheme.SpinRichTextbox text_deploy_progress;
-        private SpinTheme.SpinButton spinButton1;
+        private SpinTheme.SpinButton btn_deploy;
         private SpinHorizontalTabControl spinHorizontalTabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
@@ -765,17 +765,17 @@
         private SpinButton exit_btn;
         private System.Windows.Forms.TabPage tabPage3;
         private SpinCheckBox check_region;
-        private SpinCheckBox check_Adobe;
-        private SpinCheckBox check_OneDrive;
-        private SpinCheckBox check_USBSleep;
-        private SpinCheckBox check_NICSleep;
-        private SpinCheckBox check_Firefox;
+        private SpinCheckBox check_adobe;
+        private SpinCheckBox check_onedrive;
+        private SpinCheckBox check_usb_sleep;
+        private SpinCheckBox check_nic_sleep;
+        private SpinCheckBox check_firefox;
         private SpinCheckBox check_pin;
         private SpinCheckBox check_unpin;
-        private SpinCheckBox check_IPV6;
-        private SpinCheckBox check_Sleep;
-        private SpinCheckBox check_SelectUSB;
-        private SpinButton btn_Restart;
+        private SpinCheckBox check_ipv6;
+        private SpinCheckBox check_sleep;
+        private SpinCheckBox check_select_usb;
+        private SpinButton btn_restart;
         private SpinGroupBox presets_group;
         private SpinRadioButton radio_custom;
         private SpinRadioButton radio_new;
@@ -783,7 +783,7 @@
         private SpinGroupBox actions_groupbox;
         private SpinGroupBox spinGroupBox2;
         private SpinGroupBox spinGroupBox3;
-        private SpinCheckBox check_edgedesk;
+        private SpinCheckBox check_edge_desk;
     }
 }
 
