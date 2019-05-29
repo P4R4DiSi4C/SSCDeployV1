@@ -28,11 +28,20 @@ namespace SSCDeploy.Actions
         {
             DirectoryInfo profilesDir = new DirectoryInfo(Path.Combine(mozillaDir.FullName, "Profiles"));
 
-            if (profilesDir.EnumerateDirectories().Any())
+            foreach (var dir in profilesDir.EnumerateDirectories("*release"))
             {
-                foreach (DirectoryInfo dir in profilesDir.GetDirectories())
+                string ext_path = dir.FullName + "\\extensions";
+
+                File.Copy("Files\\handlers.json", Path.Combine(dir.FullName, "handlers.json"), true);
+
+                if (!Directory.Exists(ext_path))
                 {
-                    File.Copy("Files\\handlers.json", Path.Combine(dir.FullName, "handlers.json"), true);
+                    Directory.CreateDirectory(ext_path);
+                }
+
+                foreach (var file in Directory.GetFiles("Files", "*.xpi", SearchOption.AllDirectories))
+                {
+                    File.Copy(file, Path.Combine(ext_path, Path.GetFileName(file)), true);
                 }
             }
         }
@@ -48,7 +57,7 @@ namespace SSCDeploy.Actions
             }
 
             if(iskilled)
-                System.Threading.Thread.Sleep(3000);
+                System.Threading.Thread.Sleep(5000);
         }
 
         private static void OpenFirefox()
@@ -57,8 +66,15 @@ namespace SSCDeploy.Actions
             {
                 firefox_p.StartInfo.FileName = "firefox.exe";
                 firefox_p.Start();
-                System.Threading.Thread.Sleep(8000);
-                firefox_p.CloseMainWindow();
+                System.Threading.Thread.Sleep(10000);
+                try
+                {
+                    firefox_p.CloseMainWindow();
+                }
+                catch(Exception ex)
+                {
+
+                }
             };
         }
 
@@ -77,11 +93,25 @@ namespace SSCDeploy.Actions
                 }
             }
         }
+
+        private static void CheckArch()
+        {
+            string arch64_firefox_path = Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles) + @"\Mozilla Firefox\";
+
+            if (Directory.Exists(arch64_firefox_path) && Environment.Is64BitOperatingSystem)
+            {
+                if (Directory.GetFiles(arch64_firefox_path).Length > 0)
+                {
+                    PROGRAM_FILES = Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles);
+                }
+            }
+        }
         
         public static void Profilize()
         {
             try
             {
+                CheckArch();
                 KillFirefox();
                 ClearProfiles();
                 CopyConfigFiles();

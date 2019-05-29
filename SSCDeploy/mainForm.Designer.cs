@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainForm));
             this.SSCDeploy_SpinForm = new SpinTheme.SpinForm();
+            this.lab_version = new SpinLabel();
             this.exit_btn = new SpinButton();
             this.spinHorizontalTabControl1 = new SpinHorizontalTabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
@@ -62,7 +63,6 @@
             this.btn_privacy = new SpinButton();
             this.btn_default = new SpinButton();
             this.spinButton2 = new SpinButton();
-            this.lab_version = new SpinLabel();
             this.SSCDeploy_SpinForm.SuspendLayout();
             this.spinHorizontalTabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -92,6 +92,16 @@
             this.SSCDeploy_SpinForm.TabIndex = 0;
             this.SSCDeploy_SpinForm.Text = "SSCDeploy";
             this.SSCDeploy_SpinForm.TitleTextPostion = SpinTheme.SpinForm.TitlePostion.Left;
+            // 
+            // lab_version
+            // 
+            this.lab_version.BackColor = System.Drawing.Color.Transparent;
+            this.lab_version.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lab_version.ForeColor = System.Drawing.Color.White;
+            this.lab_version.Location = new System.Drawing.Point(420, 24);
+            this.lab_version.Name = "lab_version";
+            this.lab_version.Size = new System.Drawing.Size(32, 19);
+            this.lab_version.TabIndex = 5;
             // 
             // exit_btn
             // 
@@ -725,17 +735,6 @@
             this.spinButton2.RoundRadius = 5;
             this.spinButton2.Size = new System.Drawing.Size(0, 0);
             this.spinButton2.TabIndex = 4;
-            // 
-            // lab_version
-            // 
-            this.lab_version.BackColor = System.Drawing.Color.Transparent;
-            this.lab_version.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lab_version.ForeColor = System.Drawing.Color.White;
-            this.lab_version.Location = new System.Drawing.Point(420, 24);
-            this.lab_version.Name = "lab_version";
-            this.lab_version.Size = new System.Drawing.Size(32, 19);
-            this.lab_version.TabIndex = 5;
-            this.lab_version.Text = "V2.0";
             // 
             // mainForm
             // 
